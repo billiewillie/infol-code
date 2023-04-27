@@ -80,11 +80,10 @@ new Swiper('.swiper-gallery', {
 });
 
 const calendar = new VanillaCalendar('#calendar', {
-
   settings: {
     lang: 'ru',
     visibility: {
-      // hightlights weekends
+      // highlights weekends
       weekend: true,
       // highlights today
       today: true,
@@ -92,13 +91,34 @@ const calendar = new VanillaCalendar('#calendar', {
       monthShort: true,
       // show week numbers of the year
       weekNumbers: false,
-      // show all days, including disabled ones.s
+      // show all days, including disabled ones
       disabled: false,
       // show the days of the past and next month.
-      daysOutside: false,
+      daysOutside: true,
       theme: 'light',
-
     }
+  },
+  DOMTemplates: {
+    default: `
+      <div class="vanilla-calendar-header">
+        <div class="vanilla-calendar-header__icon">
+            <svg class="icon">
+                <use xlink:href="#calendar-icon"></use>
+            </svg>
+        </div>
+        <div class="vanilla-calendar-header__content">
+            <#Month /> <#Year />
+        </div>
+        <#ArrowPrev />
+        <#ArrowNext />
+      </div>
+      <div class="vanilla-calendar-wrapper">
+        <div class="vanilla-calendar-content">
+          <#Week />
+          <#Days />
+        </div>
+      </div>
+    `,
   },
 });
 calendar.init();

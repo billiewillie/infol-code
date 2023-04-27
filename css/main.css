@@ -3,6 +3,7 @@
   --light-blue: #57E8DF;
   --purple: #A557CA;
   --white: #fff;
+  --black: #0A0A0A;
 
   --weight-light: 400;
   --weight-medium: 600;
@@ -11,9 +12,8 @@
 
 .wrapper {
   display: flex;
-  overflow: hidden;
   min-height: 100vh;
-  padding: 70px 0 30px;
+  padding: 70px 10px 30px;
   flex-direction: column;
   justify-content: space-between;
 }
@@ -51,7 +51,7 @@ header.header {
   font-weight: var(--weight-bold);
 }
 
-.header .logo-name .white{
+.header .logo-name .white {
   color: var(--white);
 }
 
@@ -67,20 +67,64 @@ main.main {
   display: grid;
   grid-template-columns: 100%;
   gap: 30px;
-  padding: 0 10px;
 }
 
 .card {
-  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.18);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.18);
   border-radius: 3px;
   height: 100%;
   position: relative;
   overflow: hidden;
+  text-decoration: none;
 }
 
 .card__standart {
+  display: grid;
   text-align: center;
   padding: 44px 28px 36px;
+}
+
+.card__standart .title {
+  margin-bottom: 55px;
+  font-size: 26px;
+  position: relative;
+  color: var(--dark-blue);
+}
+
+.card__standart .text {
+  color: var(--black);
+}
+
+.card__standart .title::after {
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 180px;
+  height: 2px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background-color: var(--purple);
+}
+
+.docs .card__standart .title::after {
+  background-color: #E85959;
+}
+
+.order .card__standart .title::after {
+  background-color: var(--light-blue);
+}
+
+.card__standart .text {
+  font-size: 15px;
+}
+
+.card__standart .icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 36px;
 }
 
 .card-header {
@@ -92,8 +136,27 @@ main.main {
   color: var(--white);
   -webkit-border-radius: 0 0 3px 0;
   -moz-border-radius: 0 0 3px 0;
-  border-radius: 0 0 3px 0;
+  border-radius: 3px 0 3px 0;
   padding: 6px 12px;
+}
+
+.card-header__item {
+  display: flex;
+  align-items: center;
+  column-gap: 7px;
+}
+
+.card-header__item .text {
+  font-size: 13px;
+}
+
+.card-header span {
+  display: flex;
+}
+
+.card-header .icon {
+  width: 18px;
+  height: 18px;
 }
 
 .card-footer {
@@ -102,13 +165,16 @@ main.main {
 
 
 /*news*/
-
 .news .card-header {
   column-gap: 14px;
 }
 
 .news-item__content {
   padding: 11px 16px 18px;
+}
+
+.news-item__title {
+  margin-bottom: 15px;
 }
 
 .news-item-footer {
@@ -124,6 +190,22 @@ main.main {
   color: #8A8A8A;
 }
 
+.news-item-footer__stats-item {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  column-gap: 7px;
+}
+
+.news-item-footer__stats-item-icon {
+  display: flex;
+}
+
+.news-item-footer__stats-item .icon {
+  width: 17px;
+  height: 17px;
+}
+
 .news-footer__link {
   background-color: var(--light-blue);
   color: var(--white);
@@ -134,6 +216,11 @@ main.main {
   text-decoration: none;
 }
 
+.news-footer__link .icon {
+  width: 6px;
+  height: 11px;
+}
+
 .news .swiper-news {
   padding-bottom: 25px;
 }
@@ -141,7 +228,6 @@ main.main {
 .news .swiper-pagination {
   bottom: 0;
 }
-
 /*news*/
 
 
@@ -149,6 +235,12 @@ main.main {
 .birthday .card-header {
   width: 100%;
   justify-content: center;
+  column-gap: 7px;
+}
+
+.birthday .card-header-icon {
+  display: flex;
+  align-items: center;
 }
 
 .birthday-content {
@@ -197,8 +289,8 @@ main.main {
   font-size: 13px;
   text-underline-offset: 3px;
 }
-
 /* birthday */
+
 
 /*gallery*/
 .gallery {
@@ -208,25 +300,24 @@ main.main {
 .gallery .card-header {
   display: none;
 }
-
 /*gallery*/
 
+
 /*updates*/
-.updates {
+.updates .card{
   background: linear-gradient(180deg, #FFFFFF 71.19%, #E3BBF7 100%);
 }
-
 /*updates*/
 
 /*docs*/
-.docs {
+.docs .card{
   background: linear-gradient(180deg, #FFFFFF 67.11%, #F2CECE 100%);
 }
 
 /*docs*/
 
 /*order*/
-.order {
+.order .card{
   background: linear-gradient(180deg, #FFFFFF 67.11%, #BAF7F3 100%);
 }
 
@@ -248,6 +339,18 @@ main.main {
   padding-left: 0;
   padding-right: 0;
   margin-bottom: 8px;
+}
+
+.vanilla-calendar-header__icon {
+  width: 65px;
+  display: flex;
+  align-items: center;
+  padding-left: 8px;
+}
+
+.vanilla-calendar-header__icon .icon {
+  width: 16px;
+  height: 18px;
 }
 
 .vanilla-calendar-arrow {

@@ -15,6 +15,7 @@
     background-color: var(--white);
     z-index: 2;
     box-shadow: 3px -2px 15px rgba(0, 0, 0, 0.12);
+    transition: right 0.3s ease-in-out;
   }
 
   aside.aside.show {
@@ -42,6 +43,10 @@
     max-height: 25px;
   }
 
+  .burger {
+    display: none;
+  }
+
   header.header {
     height: 70px;
   }
@@ -63,11 +68,16 @@
     color: #fff;
   }
 
+  .mobile-menu {
+    display: none;
+  }
+
   main.main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, auto);
+    grid-template-rows: repeat(3, 1fr);
     gap: 20px;
+    height: calc(100vh - 110px);
   }
 
   .card__standart {
@@ -80,6 +90,7 @@
 
   .card__standart .title {
     max-width: 233px;
+    margin-top: -10px;
   }
 
   .card__standart .title::after {
@@ -105,7 +116,6 @@
     grid-row-start: 1;
     grid-row-end: 4;
     overflow-y: scroll;
-    height: 100vh;
   }
 
   .news .swiper-wrapper {
@@ -124,7 +134,7 @@
 
   .birthday .card {
     column-gap: 0;
-    padding: 50px 0 10px;
+    padding: 25px 0 10px;
     text-align: right;
   }
 
@@ -133,8 +143,13 @@
   }
 
   .birthday-content {
+    display: flex;
     column-gap: 0;
-    padding: 0 10%;
+    padding: 0;
+    flex: auto;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 0;
   }
 
   .birthday-item-photo {

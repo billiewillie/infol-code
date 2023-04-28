@@ -122,3 +122,22 @@ const calendar = new VanillaCalendar('#calendar', {
   },
 });
 calendar.init();
+
+const aside = document.querySelector('.aside');
+aside.addEventListener('mouseover', function () {
+  aside.classList.add('show');
+});
+aside.addEventListener('mouseleave', function () {
+  aside.classList.remove('show');
+});
+
+const menuSwitch = document.getElementById('menu-switch')
+const mobileMenu = document.querySelector('.mobile-menu')
+
+menuSwitch.addEventListener('change', e => {
+  if (e.target.checked === true) {
+    mobileMenu.classList.add('show');
+  } else {
+    mobileMenu.classList.remove('show');
+  }
+});

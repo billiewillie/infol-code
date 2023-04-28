@@ -8,6 +8,18 @@
   --weight-light: 400;
   --weight-medium: 600;
   --weight-bold: 700;
+
+  --line-height: 1.2;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-weight: var(--weight-light);
+  font-size: 16px;
+  line-height: var(--line-height);
+  color: var(--black);
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
 }
 
 .wrapper {
@@ -28,6 +40,7 @@ header.header {
   height: 56px;
   background-color: var(--dark-blue);
   z-index: 3;
+  justify-content: space-between;
 }
 
 .header .logo {
@@ -59,8 +72,39 @@ header.header {
   display: none;
 }
 
+.header-search {
+  display: none;
+}
+
 aside.aside {
   display: none;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 56px;
+  right: 100%;
+  width: 100%;
+  height: calc(100vh - 56px);
+  z-index: 1;
+  background-color: var(--dark-blue);
+  transition: right 0.3s ease-in-out;
+}
+
+.mobile-menu.show {
+  right: 0;
+}
+
+.mobile-menu ul {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.mobile-menu a {
+  color: var(--white);
 }
 
 main.main {
@@ -228,6 +272,7 @@ main.main {
 .news .swiper-pagination {
   bottom: 0;
 }
+
 /*news*/
 
 
@@ -269,11 +314,6 @@ main.main {
   color: var(--white);
 }
 
-.birthday-item-name {
-  font-size: 16px;
-  font-weight: var(--weight-bold);
-}
-
 .birthday-item-photo {
   width: 90px;
   height: 90px;
@@ -289,6 +329,7 @@ main.main {
   font-size: 13px;
   text-underline-offset: 3px;
 }
+
 /* birthday */
 
 
@@ -300,36 +341,35 @@ main.main {
 .gallery .card-header {
   display: none;
 }
+
 /*gallery*/
 
 
 /*updates*/
-.updates .card{
+.updates .card {
   background: linear-gradient(180deg, #FFFFFF 71.19%, #E3BBF7 100%);
 }
+
 /*updates*/
 
 /*docs*/
-.docs .card{
+.docs .card {
   background: linear-gradient(180deg, #FFFFFF 67.11%, #F2CECE 100%);
 }
 
 /*docs*/
 
 /*order*/
-.order .card{
+.order .card {
   background: linear-gradient(180deg, #FFFFFF 67.11%, #BAF7F3 100%);
 }
 
 /*order*/
 
-/* swiper */
-/*swiper*/
-
-
 /*calendar*/
 .vanilla-calendar {
   width: 100%;
+  height: 100%;
   padding: 0;
 }
 
@@ -376,4 +416,131 @@ main.main {
   order: 3;
 }
 
+[data-calendar-theme=light] .vanilla-calendar-day__btn {
+  background-color: #eee;
+}
+
+.vanilla-calendar-days {
+  column-gap: 0.25rem;
+  padding: 0 4px 4px;
+  row-gap: 4px;
+}
+
+.vanilla-calendar-day {
+  height: 100%;
+}
+
+.vanilla-calendar-day__btn {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  height: 100%;
+  min-height: 10px;
+  font-size: 14px;
+}
+
+[data-calendar-theme=light] .vanilla-calendar-day__btn_prev,
+[data-calendar-theme=light] .vanilla-calendar-day__btn_next,
+[data-calendar-theme=light] .vanilla-calendar-day__btn_weekend.vanilla-calendar-day__btn_prev,
+[data-calendar-theme=light] .vanilla-calendar-day__btn_holiday.vanilla-calendar-day__btn_prev,
+[data-calendar-theme=light] .vanilla-calendar-day__btn_weekend.vanilla-calendar-day__btn_next,
+[data-calendar-theme=light] .vanilla-calendar-day__btn_holiday.vanilla-calendar-day__btn_next {
+  background-color: #f6f6f6;
+  color: #c7c7c7;
+}
+
+[data-calendar-theme=light] .vanilla-calendar-day__btn_weekend,
+[data-calendar-theme=light] .vanilla-calendar-day__btn_holiday {
+  color: #000;
+}
+
+[data-calendar-theme=light] .vanilla-calendar-day__btn_today {
+  width: 30px;
+  height: 30px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #57E8DF;
+  color: #fff;
+}
+
 /*calendar*/
+
+/*burger*/
+.burger {
+  width: 56px;
+  height: 56px;
+  cursor: pointer;
+  background-color: var(--light-blue);
+}
+
+.burger #menu-switch {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  margin: 0;
+}
+
+.burger .menu-switch,
+.burger .menu-switch:after,
+.burger .menu-switch:before,
+.burger .menu-switch span {
+  position: absolute;
+  transition: all .3s ease-in-out;
+  transform: translateZ(0);
+}
+
+.burger .menu-switch {
+  width: 56px;
+  height: 100%;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+}
+
+.burger .menu-switch:after,
+.burger .menu-switch:before,
+.burger .menu-switch span {
+  content: "";
+  width: 19px;
+  height: 2px;
+  left: 50%;
+  top: 50%;
+  margin-left: -9px;
+  margin-top: -1px;
+  background-color: #fff;
+}
+
+.burger .menu-switch span {
+  width: 13px;
+  margin-left: 0;
+}
+
+.burger .menu-switch:before {
+  margin-top: -8px;
+}
+
+.burger .menu-switch:after {
+  margin-top: 6px;
+}
+
+.burger #menu-switch:checked ~ .menu-switch span {
+  opacity: 0;
+  height: 0;
+  transform: rotate(350deg);
+}
+
+.burger #menu-switch:checked ~ .menu-switch:after,
+.burger #menu-switch:checked ~ .menu-switch:before {
+  margin-top: -1px;
+}
+
+.burger #menu-switch:checked ~ .menu-switch:before {
+  transform: rotate(45deg);
+}
+
+.burger #menu-switch:checked ~ .menu-switch:after {
+  transform: rotate(-45deg);
+}
+
+/*burger*/

@@ -111,6 +111,7 @@ main.main {
   display: grid;
   grid-template-columns: 100%;
   gap: 30px;
+
 }
 
 .card {
@@ -273,6 +274,11 @@ main.main {
   bottom: 0;
 }
 
+.news .news-item img {
+  width: 100%;
+  object-fit: cover;
+}
+
 /*news*/
 
 
@@ -389,8 +395,8 @@ main.main {
 }
 
 .vanilla-calendar-header__icon .icon {
-  width: 16px;
-  height: 18px;
+  width: 17px;
+  height: 20px;
 }
 
 .vanilla-calendar-arrow {
@@ -421,21 +427,16 @@ main.main {
 }
 
 .vanilla-calendar-days {
-  column-gap: 0.25rem;
+  column-gap: 3px;
   padding: 0 4px 4px;
-  row-gap: 4px;
-}
-
-.vanilla-calendar-day {
-  height: 100%;
+  row-gap: 5px;
 }
 
 .vanilla-calendar-day__btn {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
-  height: 100%;
-  min-height: 10px;
+  min-height: 30px;
   font-size: 14px;
 }
 
@@ -455,13 +456,13 @@ main.main {
 }
 
 [data-calendar-theme=light] .vanilla-calendar-day__btn_today {
-  width: 30px;
-  height: 30px;
+  width: auto;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
   background-color: #57E8DF;
   color: #fff;
+  aspect-ratio: 1;
 }
 
 /*calendar*/
@@ -544,3 +545,96 @@ main.main {
 }
 
 /*burger*/
+
+.dropback {
+  display: none;
+}
+
+.dropback.show {
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  background-color: transparent;
+}
+
+/*user*/
+.header-user {
+  display: none;
+  position: relative;
+}
+
+.user-dropdown {
+  display: none;
+}
+
+/*user*/
+
+@keyframes dropdown-animation-in {
+  from {
+    display: flex;
+    top: 100%;
+    z-index: 4;
+    opacity: 0;
+  }
+
+  to {
+    top: calc(100% + 16px);
+    opacity: 1;
+    z-index: 4;
+  }
+}
+
+@keyframes dropdown-animation-in-1920 {
+  from {
+    display: flex;
+    top: 100%;
+    z-index: 4;
+    opacity: 0;
+  }
+
+  to {
+    top: calc(100% + 20px);
+    opacity: 1;
+    z-index: 4;
+  }
+}
+
+@keyframes dropdown-animation-out {
+  0% {
+    top: calc(100% + 16px);
+    z-index: 4;
+    opacity: 1;
+  }
+
+  90% {
+    top: 100%;
+    opacity: 0;
+  }
+
+  100% {
+    z-index: -1;
+    display: none;
+  }
+}
+
+@keyframes dropdown-animation-out-1920 {
+  0% {
+    top: calc(100% + 20px);
+    z-index: 4;
+    opacity: 1;
+  }
+
+  90% {
+    top: 100%;
+    opacity: 0;
+  }
+
+  100% {
+    z-index: -1;
+    display: none;
+  }
+}

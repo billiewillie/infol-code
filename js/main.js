@@ -9,10 +9,12 @@ const breakpointChecker = function () {
   if (breakpoint.matches === true) {
 
     // clean up old instances and inline styles when available
-    if (mySwiper !== undefined) mySwiper.destroy(true, true);
+    if (mySwiper !== undefined) {
+      mySwiper.destroy(true, true);
 
-    // or/and do nothing
-    return;
+      // or/and do nothing
+      return;
+    }
 
     // else if a small viewport and single column layout needed
   } else if (breakpoint.matches === false) {
@@ -48,10 +50,6 @@ breakpointChecker();
 new Swiper('.swiper-gallery', {
   loop: true,
   slidesPerView: 'auto',
-  centeredSlides: true,
-  a11y: true,
-  keyboardControl: true,
-  grabCursor: true,
 
   // pagination
   pagination: {
@@ -141,3 +139,49 @@ menuSwitch.addEventListener('change', e => {
     mobileMenu.classList.remove('show');
   }
 });
+
+const dropdownTargets = document.querySelectorAll('.dropdown-target');
+const headerUser = document.querySelector('.header-user');
+const userDropdown = document.querySelector('.user-dropdown');
+const wrapper = document.querySelector('.wrapper');
+
+let intervalId;
+
+dropdownTargets.forEach(e => {
+  e.addEventListener('click', function () {
+    const target = e.closest('.dropdown-target').dataset.path;
+    document.querySelectorAll('.dropdown').forEach(e => {
+      if (!document.querySelector(`[data-target=${target}]`).classList.contains('show')) {
+        e.classList.remove('show');
+        intervalId = setTimeout(() => {
+          document.querySelector(`[data-target=${target}]`).classList.add('show');
+        })
+      }
+
+      if (document.querySelector(`[data-target=${target}]`).classList.contains('show')) {
+        clearTimeout(intervalId);
+        intervalId = setTimeout(() => {
+          document.querySelector(`[data-target=${target}]`).classList.add('hide');
+          setTimeout(e => {
+            document.querySelector(`[data-target=${target}]`).classList.remove('hide', 'show');
+          }, 500);
+        })
+      }
+
+      window.onclick = ev => {
+        if (ev.target === document.querySelector(`[data-target=${target}]`)
+          || ev.target === document.querySelector(`[data-path=${target}]`)
+        ) {
+          return null;
+        } else {
+          document.querySelector(`[data-target=${target}]`).classList.add('hide');
+          setTimeout(e => {
+            document.querySelector(`[data-target=${target}]`).classList.remove('hide', 'show');
+          }, 500);
+        }
+      }
+    });
+  });
+});
+
+

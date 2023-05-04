@@ -1,17 +1,17 @@
-@media (min-width: 992px) {
+@media (min-width: 1280px) {
   .wrapper {
-    padding: 90px 20px 20px 96px;
+    padding: 66px 16px 16px 66px;
   }
 
   aside.aside {
     display: flex;
     position: fixed;
     justify-content: flex-end;
-    right: calc(100% - 70px);
-    top: 70px;
-    height: calc(100% - 70px);
-    width: 208px;
-    padding: 24px;
+    right: calc(100% - 50px);
+    top: 50px;
+    height: calc(100% - 50px);
+    width: 190px;
+    padding: 16px;
     background-color: var(--white);
     z-index: 2;
     box-shadow: 3px -2px 15px rgba(0, 0, 0, 0.12);
@@ -19,28 +19,34 @@
   }
 
   aside.aside.show {
-    right: calc(100% - 208px);
+    right: calc(100% - 190px);
   }
 
   aside.aside ul {
+    row-gap: 48px;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    text-align: right;
-    row-gap: 68px;
+  }
+
+  aside.aside ul li {
+    display: flex;
+    justify-content: space-between;
   }
 
   aside.aside ul li a {
     display: flex;
+    width: 100%;
+    justify-content: flex-end;
     align-items: center;
     column-gap: 24px;
     font-size: 13px;
     color: var(--dark-blue);
+    text-align: right;
   }
 
   aside.aside ul li svg {
-    max-width: 25px;
-    max-height: 25px;
+    max-width: 18px;
+    max-height: 21px;
   }
 
   .burger {
@@ -48,11 +54,16 @@
   }
 
   header.header {
-    height: 70px;
+    height: 50px;
+    padding-right: 16px;
   }
 
   .header .logo-icon {
-    width: 70px;
+    width: 50px;
+  }
+
+  .header .logo-name {
+    font-size: 18px;
   }
 
   .header-menu,
@@ -61,11 +72,103 @@
   }
 
   .header-menu li {
-    padding: 0 30px;
+    padding: 0 10px;
   }
 
   .header-menu a {
     color: #fff;
+  }
+
+  .header-search {
+    display: flex;
+    height: 100%;
+    align-items: stretch;
+  }
+
+  .header-search input[type="text"] {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 0 18px;
+  }
+
+  .header-search input[type="submit"] {
+    width: 50px;
+    background-color: var(--light-blue);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 15px 15px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .header-user {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    cursor: pointer;
+    height: 100%;
+  }
+
+  .user-dropdown {
+    display: none;
+    position: absolute;
+    opacity: 0;
+    transition: opacity .3s ease-in-out, top .3s ease-in-out;
+    top: 100%;
+    right: 0;
+    z-index: -1;
+    background-color: var(--white);
+    box-shadow: 3px -2px 15px rgba(0, 0, 0, 0.12);
+    padding: 25px;
+    -webkit-border-radius: 0 0 3px 3px;
+    -moz-border-radius: 0 0 3px 3px;
+    border-radius: 0 0 3px 3px;
+  }
+
+  .user-dropdown.show {
+    display: flex;
+    animation: dropdown-animation-in 0.3s ease-in-out forwards;
+  }
+  .user-dropdown.show.hide {
+    animation: dropdown-animation-out 0.3s ease-in-out forwards;
+  }
+
+  .user-dropdown ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 28px;
+  }
+
+  .user-dropdown a {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    color: var(--dark-blue);
+    font-size: 14px;
+  }
+
+  .user-dropdown a .icon {
+    display: block;
+    width: auto;
+    max-width: 17px;
+    height: auto;
+    max-height: 19px;
+    transform: inherit;
+  }
+
+  .header-user-avatar {
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+  }
+
+  .header-user .icon {
+    width: 4px;
+    height: 10px;
+    transform: rotate(90deg);
   }
 
   .mobile-menu {
@@ -76,21 +179,27 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    gap: 20px;
-    height: calc(100vh - 110px);
+    gap: 16px;
+    height: calc(100vh - 82px);
   }
 
   .card__standart {
     text-align: left;
     grid-template-columns: 48px auto;
     grid-template-rows: auto 1fr;
-    padding: 44px 28px 36px;
+    padding: 34px 24px 34px;
     grid-column-gap: 63px;
   }
 
   .card__standart .title {
-    max-width: 233px;
     margin-top: -10px;
+    padding-right: 20px;
+    margin-bottom: 30px;
+    font-size: 22px;
+  }
+
+  .card__standart .text {
+    font-size: 11px;
   }
 
   .card__standart .title::after {
@@ -121,7 +230,7 @@
   .news .swiper-wrapper {
     display: flex;
     flex-direction: column;
-    row-gap: 20px;
+    row-gap: 16px;
   }
 
   .news .swiper-news {
@@ -225,5 +334,10 @@
   .swiper-gallery .swiper-slide img {
     height: 100%;
     object-fit: cover;
+  }
+
+  .vanilla-calendar-days {
+    column-gap: 4px;
+    row-gap: 2px;
   }
 }

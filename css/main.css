@@ -614,28 +614,48 @@ main.main {
 
 .user-info__contacts {
   position: relative;
-  padding: 25px 0;
+  padding: 25px 10px;
   background-color: var(--dark-blue);
   color: var(--white);
   display: flex;
   flex-direction: column;
   row-gap: 25px;
+  width: calc(100% + 20px);
+  margin-left: -10px;
 }
 
-.user-info__contacts::before{
-  content: "";
-  position: absolute;
-  display: block;
-  right: 0;
-  left: -20px;
-  top: 0;
-  margin: auto;
-  width: calc(100% + 40px);
-  height: 100%;
-  background-color: var(--dark-blue);
-  z-index: -1;
+.user-info__badges {
+  display: flex;
+  width: calc(100% + 20px);
+  margin-left: -10px;
 }
+
+.user-info__badges>div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 12px;
+  text-align: center;
+  padding: 15px 0;
+  color: var(--white);
+  flex: auto;
+}
+
+.user-info__badges>div .icon{
+  max-width: 42px;
+  max-height: 36px;
+}
+
+.user-info__vacation {
+  background-color: #E85959;
+}
+
+.user-info__years {
+  background-color: var(--light-blue);
+}
+
 .user-info__row {
+  display: flex;
   column-gap: 10px;
 }
 .user-info__row .user-info__title {

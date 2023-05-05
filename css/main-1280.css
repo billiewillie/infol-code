@@ -129,6 +129,7 @@
     display: flex;
     animation: dropdown-animation-in 0.3s ease-in-out forwards;
   }
+
   .user-dropdown.show.hide {
     animation: dropdown-animation-out 0.3s ease-in-out forwards;
   }
@@ -177,10 +178,20 @@
 
   main.main {
     display: grid;
+  }
+
+  main.main.index-page {
+    height: calc(100vh - 82px);
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 16px;
-    height: calc(100vh - 82px);
+  }
+
+  main.main.personal-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 16px;
   }
 
   .card__standart {
@@ -339,5 +350,70 @@
   .vanilla-calendar-days {
     column-gap: 4px;
     row-gap: 2px;
+  }
+
+  .user-photo {
+    width: 32%;
+  }
+
+  .user-photo .swiper {
+    height: 100%;
+  }
+
+  .user-info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+    row-gap: 16px;
+  }
+
+  .user-info__general {
+    padding: 60px 64px 35px;
+    text-align: left;
+    row-gap: 40px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.18) 0 0 8px;
+  }
+
+  .user-info__general .user-name {
+    font-weight: var(--weight-thin);
+    font-size: 66px;
+  }
+
+  .user-info__contacts {
+    flex-direction: row;
+    padding: 50px 10px 50px 64px;
+    font-size: 19px;
+    column-gap: 47px;
+  }
+
+  .user-info__contacts::before {
+    display: none;
+  }
+
+  .user-info__badges {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .user-info__about {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    align-items: stretch;
+  }
+
+  .user-info__row {
+    display: flex;
+  }
+
+  .user-info__position {
+    padding: 55px 64px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.18);
+    border-radius: 3px;
   }
 }

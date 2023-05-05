@@ -72,12 +72,13 @@
     height: 38px;
   }
 
-  main.main {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 20px;
+  main.main.index-page {
     height: calc(100vh - 110px);
+    gap: 20px;
+  }
+
+  main.main.personal-page {
+    column-gap: 20px;
   }
 
   .card__standart {
@@ -90,6 +91,10 @@
 
   .card__standart .title {
     font-size: 28px;
+  }
+
+  .card__standart .text {
+    font-size: 14px;
   }
 
   .card__standart .title::after {
@@ -215,5 +220,9 @@
   .vanilla-calendar-days {
     column-gap: 4px;
     row-gap: 2px;
+  }
+
+  .user-info {
+    row-gap: 20px;
   }
 }

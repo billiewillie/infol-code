@@ -5,6 +5,7 @@
   --white: #fff;
   --black: #0A0A0A;
 
+  --weight-thin: 100;
   --weight-light: 400;
   --weight-medium: 600;
   --weight-bold: 700;
@@ -28,6 +29,7 @@ body {
   padding: 70px 10px 30px;
   flex-direction: column;
   justify-content: space-between;
+  overflow: hidden;
 }
 
 header.header {
@@ -86,7 +88,7 @@ aside.aside {
   right: 100%;
   width: 100%;
   height: calc(100vh - 56px);
-  z-index: 1;
+  z-index: 2;
   background-color: var(--dark-blue);
   transition: right 0.3s ease-in-out;
 }
@@ -108,10 +110,9 @@ aside.aside {
 }
 
 main.main {
-  display: grid;
-  grid-template-columns: 100%;
-  gap: 30px;
-
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
 }
 
 .card {
@@ -335,7 +336,6 @@ main.main {
   font-size: 13px;
   text-underline-offset: 3px;
 }
-
 /* birthday */
 
 
@@ -364,7 +364,6 @@ main.main {
   mix-blend-mode: multiply;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 11%, #272E46 100%);
 }
-
 /*gallery*/
 
 
@@ -372,21 +371,18 @@ main.main {
 .updates .card {
   background: linear-gradient(180deg, #FFFFFF 71.19%, #E3BBF7 100%);
 }
-
 /*updates*/
 
 /*docs*/
 .docs .card {
   background: linear-gradient(180deg, #FFFFFF 67.11%, #F2CECE 100%);
 }
-
 /*docs*/
 
 /*order*/
 .order .card {
   background: linear-gradient(180deg, #FFFFFF 67.11%, #BAF7F3 100%);
 }
-
 /*order*/
 
 /*calendar*/
@@ -589,6 +585,114 @@ main.main {
 }
 
 /*user*/
+
+.user-info__general {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.user-info__general .user-name {
+  font-weight: var(--weight-light);
+  font-size: 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+.user-info__general .user-birthday {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-info__general .user-birthday .icon {
+  width: 17px;
+  height: 16px;
+}
+
+.user-info__contacts {
+  position: relative;
+  padding: 25px 0;
+  background-color: var(--dark-blue);
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+}
+
+.user-info__contacts::before{
+  content: "";
+  position: absolute;
+  display: block;
+  right: 0;
+  left: -20px;
+  top: 0;
+  margin: auto;
+  width: calc(100% + 40px);
+  height: 100%;
+  background-color: var(--dark-blue);
+  z-index: -1;
+}
+.user-info__row {
+  column-gap: 10px;
+}
+.user-info__row .user-info__title {
+  font-size: 13px;
+  min-width: 90px;
+  color: #8D8D8D;
+}
+
+.user-info__row .user-info__value {
+  font-size: 16px;
+}
+
+.user-info__about {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+.user-info__position {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+  row-gap: 25px;
+}
+
+.user-info__location {
+  position: relative;
+  filter: drop-shadow(0px 0px 11px rgba(0, 0, 0, 0.24));
+  border-radius: 3px;
+}
+
+.user-info__location img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.user-info__location-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  padding: 7px 10px;
+  background-color: var(--light-blue);
+  color: var(--white);
+}
+
+.user-info__location-header .icon {
+  width: 13px;
+  height: 17px;
+}
+
+.swiper-slide.user-item img{
+  height: 100%;
+  object-fit: cover;
+}
 
 @keyframes dropdown-animation-in {
   from {

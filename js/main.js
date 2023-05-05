@@ -77,6 +77,17 @@ new Swiper('.swiper-gallery', {
   }
 });
 
+new Swiper('.swiper-user', {
+  loop: true,
+  slidesPerView: 'auto',
+
+  // pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+  },
+});
+
 const calendar = new VanillaCalendar('#calendar', {
   settings: {
     lang: 'ru',

@@ -88,6 +88,38 @@ new Swiper('.swiper-user', {
   },
 });
 
+new Swiper('.swiper-user-position', {
+  loop: true,
+  slidesPerView: 'auto',
+
+  // pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+  },
+
+  // Navigation arrows
+  navigation: {
+    enabled: false,
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  breakpoints: {
+    // when window width is >= 320px
+    1280: {
+      pagination: {
+        enabled: false
+      },
+
+      // Navigation arrows
+      navigation: {
+        enabled: true,
+      },
+    },
+  }
+});
+
 const calendar = new VanillaCalendar('#calendar', {
   settings: {
     lang: 'ru',

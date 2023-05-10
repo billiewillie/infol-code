@@ -225,7 +225,12 @@
     row-gap: 20px;
   }
 
-  .user-photo {
-    width: 32%;
+  .user-info__contacts {
+    font-size: 19px;
+    column-gap: 47px;
+  }
+
+  .user-info__contacts-item {
+    column-gap: 17px;
   }
 }

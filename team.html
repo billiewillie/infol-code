@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="ru">
+
 <head>
   <meta charset="utf-8">
   <title>infoLine</title>
@@ -11,8 +12,9 @@
   <!-- font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500;700&display=swap"
-        rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500;600;700&display=swap"
+    rel="stylesheet">
   <!-- font -->
 
   <!-- Plugin CSS -->
@@ -30,9 +32,46 @@
   <link rel="stylesheet" href="css/main-1280.css">
   <link rel="stylesheet" href="css/main-1920.css">
 </head>
-<body>
 
+<body>
 <div class="wrapper">
+  <div class="mobile-menu">
+    <ul>
+      <li>
+        <a href="">Новости</a>
+      </li>
+      <li>
+        <a href="">Новичку</a>
+      </li>
+      <li>
+        <a href="">Фотогалерея</a>
+      </li>
+      <li>
+        <a href="">Наша команда</a>
+      </li>
+      <li>
+        <a href="">О компании</a>
+      </li>
+      <li>
+        <a href="">Документы</a>
+      </li>
+      <li>
+        <a href="">Инструкции</a>
+      </li>
+      <li>
+        <a href="">Заявки</a>
+      </li>
+      <li>
+        <a href="">Бронирование переговорок</a>
+      </li>
+      <li>
+        <a href="">Маркетинговые материалы</a>
+      </li>
+      <li>
+        <a href="">Обучение</a>
+      </li>
+    </ul>
+  </div>
   <header class="header">
     <a href="/" class="logo">
       <div class="logo-icon">
@@ -155,423 +194,171 @@
       </ul>
     </nav>
   </aside>
-  <main class="main index-page">
-    <div class="news main-section">
-      <div class="swiper swiper-news">
+  <main class="main">
+    <div class="user-photo">
+      <div class="swiper swiper-user">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
           <!-- Slides -->
-          <div class="swiper-slide card news-item">
-            <header class="card-header">
-              <div class="card-header__item">
-                <span>
-                    <svg class="icon">
-                      <use xlink:href="#calendar-icon"></use>
-                    </svg>
-                </span>
-                <span class="text">11.11.11</span>
-              </div>
-              <div class="card-header__item">
-                <span>
-                    <svg class="icon">
-                      <use xlink:href="#clock-icon"></use>
-                    </svg>
-                </span>
-                <span class="text">11:11</span>
-              </div>
-            </header>
+          <div class="swiper-slide user-item">
             <picture>
-              <source srcset="./img/news-1.webp" type="image/webp"/>
-              <img src="./img/news-1.jpg" alt="news-1"/>
+              <source srcset="./img/lazareva.webp" type="image/webp"/>
+              <img src="./img/lazareva.jpg" alt="news-1"/>
             </picture>
-            <div class="news-item__content">
-              <h2 class="news-item__title">Интервью с победителями: проект года в поддержке</h2>
-              <p>
-                Представляем вашему вниманию сводку актуальных новостей отдела оптической микроскопии, анализа
-                изображений и спектрометрии в научных исследованиях.
-              </p>
-            </div>
-            <footer class="news-item-footer">
-              <div class="news-item-footer__stats">
-                <div class="news-item-footer__stats-item">
-                  <span class="news-item-footer__stats-item-icon">
-                    <svg class="icon">
-                      <use xlink:href="#message-icon"></use>
-                    </svg>
-                  </span>
-                  <span class="news-item-footer__stats-item-number">12</span>
-                </div>
-                <div class="news-item-footer__stats-item">
-                  <span class="news-item-footer__stats-item-icon">
-                    <svg class="icon">
-                      <use xlink:href="#like-icon"></use>
-                    </svg>
-                  </span>
-                  <span class="news-item-footer__stats-item-number">12</span>
-                </div>
-                <div class="news-item-footer__stats-item">
-                  <span class="news-item-footer__stats-item-icon">
-                    <svg class="icon">
-                      <use xlink:href="#eye-icon"></use>
-                    </svg>
-                  </span>
-                  <span class="news-item-footer__stats-item-number">12</span>
-                </div>
-              </div>
-              <a href="#" class="news-footer__link">
-                <span>Читать полностью</span>
-                <svg class="icon">
-                  <use xlink:href="#arrow-icon"></use>
-                </svg>
-              </a>
-            </footer>
           </div>
-          <div class="swiper-slide card news-item">
-            <header class="card-header">
-              <div class="card-header__item">
-                <span>
-                    <svg class="icon">
-                      <use xlink:href="#calendar-icon"></use>
-                    </svg>
-                </span>
-                <span class="text">11.11.11</span>
-              </div>
-              <div class="card-header__item">
-                <span>
-                    <svg class="icon">
-                      <use xlink:href="#clock-icon"></use>
-                    </svg>
-                </span>
-                <span class="text">11:11</span>
-              </div>
-            </header>
+          <div class="swiper-slide user-item">
             <picture>
-              <source srcset="./img/news-1.webp" type="image/webp"/>
-              <img src="./img/news-1.jpg" alt="news-1"/>
+              <source srcset="./img/lazareva.webp" type="image/webp"/>
+              <img src="./img/lazareva.jpg" alt="news-1"/>
             </picture>
-            <div class="news-item__content">
-              <h2 class="news-item__title">Интервью с победителями: проект года в поддержке</h2>
-              <p>
-                Представляем вашему вниманию сводку актуальных новостей отдела оптической микроскопии, анализа
-                изображений и спектрометрии в научных исследованиях.
-              </p>
-            </div>
-            <footer class="news-item-footer">
-              <div class="news-item-footer__stats">
-                <div class="news-item-footer__stats-item">
-                  <span class="news-item-footer__stats-item-icon">
-                    <svg class="icon">
-                      <use xlink:href="#message-icon"></use>
-                    </svg>
-                  </span>
-                  <span class="news-item-footer__stats-item-number">12</span>
-                </div>
-                <div class="news-item-footer__stats-item">
-                  <span class="news-item-footer__stats-item-icon">
-                    <svg class="icon">
-                      <use xlink:href="#like-icon"></use>
-                    </svg>
-                  </span>
-                  <span class="news-item-footer__stats-item-number">12</span>
-                </div>
-                <div class="news-item-footer__stats-item">
-                  <span class="news-item-footer__stats-item-icon">
-                    <svg class="icon">
-                      <use xlink:href="#eye-icon"></use>
-                    </svg>
-                  </span>
-                  <span class="news-item-footer__stats-item-number">12</span>
-                </div>
-              </div>
-              <a href="#" class="news-footer__link">
-                <span>Читать полностью</span>
-                <svg class="icon">
-                  <use xlink:href="#arrow-icon"></use>
-                </svg>
-              </a>
-            </footer>
-          </div>
-          <div class="swiper-slide card news-item">
-            <header class="card-header">
-              <div class="card-header__item">
-                <span>
-                    <svg class="icon">
-                      <use xlink:href="#calendar-icon"></use>
-                    </svg>
-                </span>
-                <span class="text">11.11.11</span>
-              </div>
-              <div class="card-header__item">
-                <span>
-                    <svg class="icon">
-                      <use xlink:href="#clock-icon"></use>
-                    </svg>
-                </span>
-                <span class="text">11:11</span>
-              </div>
-            </header>
-            <picture>
-              <source srcset="./img/news-1.webp" type="image/webp"/>
-              <img src="./img/news-1.jpg" alt="news-1"/>
-            </picture>
-            <div class="news-item__content">
-              <h2 class="news-item__title">Интервью с победителями: проект года в поддержке</h2>
-              <p>
-                Представляем вашему вниманию сводку актуальных новостей отдела оптической микроскопии, анализа
-                изображений и спектрометрии в научных исследованиях.
-              </p>
-            </div>
-            <footer class="news-item-footer">
-              <div class="news-item-footer__stats">
-                <div class="news-item-footer__stats-item">
-                  <span class="news-item-footer__stats-item-icon">
-                    <svg class="icon">
-                      <use xlink:href="#message-icon"></use>
-                    </svg>
-                  </span>
-                  <span class="news-item-footer__stats-item-number">12</span>
-                </div>
-                <div class="news-item-footer__stats-item">
-                  <span class="news-item-footer__stats-item-icon">
-                    <svg class="icon">
-                      <use xlink:href="#like-icon"></use>
-                    </svg>
-                  </span>
-                  <span class="news-item-footer__stats-item-number">12</span>
-                </div>
-                <div class="news-item-footer__stats-item">
-                  <span class="news-item-footer__stats-item-icon">
-                    <svg class="icon">
-                      <use xlink:href="#eye-icon"></use>
-                    </svg>
-                  </span>
-                  <span class="news-item-footer__stats-item-number">12</span>
-                </div>
-              </div>
-              <a href="#" class="news-footer__link">
-                <span>Читать полностью</span>
-                <svg class="icon">
-                  <use xlink:href="#arrow-icon"></use>
-                </svg>
-              </a>
-            </footer>
-          </div>
-          <div class="swiper-slide card news-item">
-            <header class="card-header">
-              <div class="card-header__item">
-                <span>
-                    <svg class="icon">
-                      <use xlink:href="#calendar-icon"></use>
-                    </svg>
-                </span>
-                <span class="text">11.11.11</span>
-              </div>
-              <div class="card-header__item">
-                <span>
-                    <svg class="icon">
-                      <use xlink:href="#clock-icon"></use>
-                    </svg>
-                </span>
-                <span class="text">11:11</span>
-              </div>
-            </header>
-            <picture>
-              <source srcset="./img/news-1.webp" type="image/webp"/>
-              <img src="./img/news-1.jpg" alt="news-1"/>
-            </picture>
-            <div class="news-item__content">
-              <h2 class="news-item__title">Интервью с победителями: проект года в поддержке</h2>
-              <p>
-                Представляем вашему вниманию сводку актуальных новостей отдела оптической микроскопии, анализа
-                изображений и спектрометрии в научных исследованиях.
-              </p>
-            </div>
-            <footer class="news-item-footer">
-              <div class="news-item-footer__stats">
-                <div class="news-item-footer__stats-item">
-                  <span class="news-item-footer__stats-item-icon">
-                    <svg class="icon">
-                      <use xlink:href="#message-icon"></use>
-                    </svg>
-                  </span>
-                  <span class="news-item-footer__stats-item-number">12</span>
-                </div>
-                <div class="news-item-footer__stats-item">
-                  <span class="news-item-footer__stats-item-icon">
-                    <svg class="icon">
-                      <use xlink:href="#like-icon"></use>
-                    </svg>
-                  </span>
-                  <span class="news-item-footer__stats-item-number">12</span>
-                </div>
-                <div class="news-item-footer__stats-item">
-                  <span class="news-item-footer__stats-item-icon">
-                    <svg class="icon">
-                      <use xlink:href="#eye-icon"></use>
-                    </svg>
-                  </span>
-                  <span class="news-item-footer__stats-item-number">12</span>
-                </div>
-              </div>
-              <a href="#" class="news-footer__link">
-                <span>Читать полностью</span>
-                <svg class="icon">
-                  <use xlink:href="#arrow-icon"></use>
-                </svg>
-              </a>
-            </footer>
           </div>
         </div>
         <!-- If we need pagination -->
         <div class="swiper-pagination"></div>
       </div>
     </div>
-    <div class="birthday main-section">
-      <div class="card">
-        <header class="card-header">
-          <span class="card-header-icon">
-             <svg class="icon">
-               <use xlink:href="#gift-icon"></use>
-             </svg>
-          </span>
-          <span class="card-header-title">С Днем Рождения!</span>
-        </header>
-        <div class="birthday-content">
-          <a href="#" class="birthday-item">
-            <div class="birthday-item-photo">
-              <picture>
-                <source srcset="./img/birthday-1.webp" type="image/webp"/>
-                <img src="./img/birthday-1.jpg" alt="news-1"/>
-              </picture>
-            </div>
-          </a>
-          <a href="#" class="birthday-item">
-            <div class="birthday-item-photo">
-              <picture>
-                <source srcset="./img/birthday-1.webp" type="image/webp"/>
-                <img src="./img/birthday-1.jpg" alt="news-1"/>
-              </picture>
-            </div>
-          </a>
-          <a href="#" class="birthday-item">
-            <div class="birthday-item-photo">
-              <picture>
-                <source srcset="./img/birthday-1.webp" type="image/webp"/>
-                <img src="./img/birthday-1.jpg" alt="news-1"/>
-              </picture>
-            </div>
-          </a>
+    <div class="user-info">
+      <div class="user-info__general">
+        <h1 class="user-name">
+          <span class="surname">Лазарева</span>
+          <span>Марина Руслановна</span>
+        </h1>
+        <div class="user-birthday">
+          <svg class="icon">
+            <use xlink:href="#mail-icon"></use>
+          </svg>
+          <span>День рождения: 20 Марта</span>
         </div>
-        <a href="#" class="birthday-link">Все дни рождения</a>
       </div>
-    </div>
-    <div class="calendar main-section">
-      <div class="card">
-        <div class="vanilla-calendar" id="calendar"></div>
-      </div>
-    </div>
-    <div class="gallery main-section">
-      <h2 class="gallery-title">Выставка однажды где-то</h2>
-      <header class="card-header">
-        <span class="card-header__icon">
-            <svg class="icon">
-               <use xlink:href="#gallery-icon"></use>
-             </svg>
-        </span>
-        <span class="card-header__title">Выставка однажды где-то</span>
-      </header>
-      <div class="swiper swiper-gallery">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-          <!-- Slides -->
-          <div class="swiper-slide card gallery-item">
-            <picture>
-              <source srcset="./img/news-1.webp" type="image/webp"/>
-              <img src="./img/news-1.jpg" alt="news-1"/>
-            </picture>
-          </div>
-          <div class="swiper-slide card gallery-item">
-            <picture>
-              <source srcset="./img/news-1.webp" type="image/webp"/>
-              <img src="./img/news-1.jpg" alt="news-1"/>
-            </picture>
+      <div class="user-info__contacts">
+        <div class="user-info__contacts-item user-phone__local">
+          <svg class="icon">
+            <use xlink:href="#phone-icon"></use>
+          </svg>
+          <div>
+            <span>Местный телефон: 389</span>
           </div>
         </div>
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
+        <div class="user-info__contacts-item user-email">
+          <svg class="icon">
+            <use xlink:href="#mail-icon"></use>
+          </svg>
+          <div>
+            <span>Эл.почта: <a href="mailto:gusikhina@bioline.ru">gusikhina@bioline.ru</a></span>
+          </div>
+          <svg class="icon">
+            <use xlink:href="#copy-icon"></use>
+          </svg>
+        </div>
+        <div class="user-info__contacts-item user-phone__mobile">
+          <svg class="icon">
+            <use xlink:href="#phone-icon"></use>
+          </svg>
+          <div>
+            <span>Мобильный: <a href="tel:+79218768787">+7(931) 394-84-24</a></span>
+          </div>
+          <svg class="icon">
+            <use xlink:href="#copy-icon"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="user-info__badges">
+        <div class="user-info__badges-item vacation">
+          <svg class="icon">
+            <use xlink:href="#vacation-icon"></use>
+          </svg>
+          <p class="text">
+            <span>в отпуске с</span> <span>1 апреля</span> - <span>9 мая</span>
+          </p>
+        </div>
+        <div class="user-info__badges-item years">
+          <p class="years-number">16</p>
+          <p class="text">лет в компании</p>
+        </div>
+        <div class="user-info__badges-item titles">
+          <svg class="icon">
+            <use xlink:href="#title-icon"></use>
+          </svg>
+          <p class="text">награды</p>
+        </div>
+      </div>
+      <div class="user-info__about">
+        <div class="user-info__position">
+          <div class="swiper swiper-user-position">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide swiper-user-position-item">
+                <div class="user-info__row">
+                  <div class="user-info__title">Должность:</div>
+                  <div class="user-info__value">Санкт-Петербург</div>
+                </div>
+                <div class="user-info__row">
+                  <div class="user-info__title">Компания:</div>
+                  <div class="user-info__value">Bio Line</div>
+                </div>
+                <div class="user-info__row">
+                  <div class="user-info__title">Компания:</div>
+                  <a href="#" class="user-info__value">Отдел оптической микроскопии, анализа изображений и спектрометрии
+                    в
+                    научных исследованиях</a>
+                </div>
+                <div class="user-info__row">
+                  <div class="user-info__title">Группа:</div>
+                  <div class="user-info__value">Группа микроскопии высокого разрешения и анализа изображений</div>
+                </div>
+                <div class="user-info__row">
+                  <div class="user-info__title">Должность:</div>
+                  <div class="user-info__value">Руководитель группы</div>
+                </div>
+              </div>
+              <div class="swiper-slide swiper-user-position-item">
+                <div class="user-info__row">
+                  <div class="user-info__title">Должность:</div>
+                  <div class="user-info__value">Санкт-Петербург</div>
+                </div>
+                <div class="user-info__row">
+                  <div class="user-info__title">Компания:</div>
+                  <div class="user-info__value">Bio Line</div>
+                </div>
+                <div class="user-info__row">
+                  <div class="user-info__title">Компания:</div>
+                  <a href="#" class="user-info__value">Отдел оптической микроскопии, анализа изображений и спектрометрии
+                    в
+                    научных исследованиях</a>
+                </div>
+                <div class="user-info__row">
+                  <div class="user-info__title">Группа:</div>
+                  <div class="user-info__value">Группа микроскопии высокого разрешения и анализа изображений</div>
+                </div>
+                <div class="user-info__row">
+                  <div class="user-info__title">Должность:</div>
+                  <div class="user-info__value">Руководитель группы</div>
+                </div>
+              </div>
+            </div>
 
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+        <div class="user-info__location">
+          <header class="user-info__location-header">
+            <svg class="icon">
+              <use xlink:href="#location-icon"></use>
+            </svg>
+            <span>Где находится?</span>
+          </header>
+          <picture>
+            <source srcset="./img/map.webp" type="image/webp"/>
+            <img src="./img/map.png" alt="avatar"/>
+          </picture>
+        </div>
       </div>
-    </div>
-    <div class="updates main-section">
-      <a href="/" class="card card__standart">
-        <svg class="icon">
-          <use xlink:href="#updates-icon"></use>
-        </svg>
-        <h3 class="title">Обновления на сайте</h3>
-        <p class="text">Душа моя озарена неземной радостью, как эти чудесслаждаюсь от всего сердца.</p>
-      </a>
-    </div>
-    <div class="docs main-section">
-      <a href="/" class="card card__standart">
-        <svg class="icon">
-          <use xlink:href="#docs-icon"></use>
-        </svg>
-        <h3 class="title">Обновления на сайте</h3>
-        <p class="text">Душа моя озарена неземной радостью, как эти чудесные весенние утра, которыми я наслаждаюсь от
-          всего сердца.</p>
-      </a>
-    </div>
-    <div class="order main-section">
-      <a href="/" class="card card__standart">
-        <svg class="icon">
-          <use xlink:href="#order-icon"></use>
-        </svg>
-        <h3 class="title">Обновления на сайте</h3>
-        <p class="text">Душа моя озарена неземной радостью, как эти чудесные весенние утра, которыми я наслаждаюсь от
-          всего сердца.</p>
-      </a>
     </div>
   </main>
-  <div class="mobile-menu">
-    <ul>
-      <li>
-        <a href="">Новости</a>
-      </li>
-      <li>
-        <a href="">Новичку</a>
-      </li>
-      <li>
-        <a href="">Фотогалерея</a>
-      </li>
-      <li>
-        <a href="">Наша команда</a>
-      </li>
-      <li>
-        <a href="">О компании</a>
-      </li>
-      <li>
-        <a href="">Документы</a>
-      </li>
-      <li>
-        <a href="">Инструкции</a>
-      </li>
-      <li>
-        <a href="">Заявки</a>
-      </li>
-      <li>
-        <a href="">Бронирование переговорок</a>
-      </li>
-      <li>
-        <a href="">Маркетинговые материалы</a>
-      </li>
-      <li>
-        <a href="">Обучение</a>
-      </li>
-    </ul>
-  </div>
 </div>
 
 <svg width="0" height="0" class="hidden">
@@ -751,6 +538,63 @@
     <path d="M8.09131 9H17M17 9L13.9543 5.92969M17 9L13.9543 12.0703" stroke="#2B365A" stroke-width="1.5"
           stroke-linecap="round" stroke-linejoin="round"/>
   </symbol>
+  <symbol viewBox="0 0 16 19" fill="none" xmlns="http://www.w3.org/2000/svg" id="location-icon">
+    <path
+      d="M10.2498 16.135L9.65964 15.6722L10.2498 16.135ZM5.7502 16.135L5.16002 16.5978L5.7502 16.135ZM8.00001 17.9999V17.2499V17.9999ZM13.7224 7.97025C13.7224 8.92301 13.2217 10.223 12.4091 11.6597C11.6131 13.067 10.5827 14.4951 9.65964 15.6722L10.84 16.5978C11.7856 15.392 12.8666 13.8976 13.7147 12.3982C14.5462 10.9281 15.2224 9.33723 15.2224 7.97025H13.7224ZM6.34037 15.6722C5.4173 14.4951 4.38694 13.067 3.59093 11.6597C2.77832 10.223 2.27759 8.92301 2.27759 7.97025H0.777588C0.777588 9.33723 1.45381 10.9281 2.28532 12.3982C3.13344 13.8976 4.21439 15.392 5.16002 16.5978L6.34037 15.6722ZM2.27759 7.97025C2.27759 4.48513 4.89045 1.75537 8.00001 1.75537V0.255371C3.96033 0.255371 0.777588 3.76219 0.777588 7.97025H2.27759ZM8.00001 1.75537C11.1096 1.75537 13.7224 4.48513 13.7224 7.97025H15.2224C15.2224 3.76219 12.0397 0.255371 8.00001 0.255371V1.75537ZM9.65964 15.6722C9.15573 16.3148 8.83448 16.7204 8.55029 16.9785C8.29822 17.2075 8.15126 17.2499 8.00001 17.2499V18.7499C8.63615 18.7499 9.12663 18.4815 9.55887 18.0888C9.959 17.7254 10.369 17.1985 10.84 16.5978L9.65964 15.6722ZM5.16002 16.5978C5.63105 17.1985 6.04101 17.7254 6.44114 18.0888C6.87339 18.4815 7.36387 18.7499 8.00001 18.7499V17.2499C7.84875 17.2499 7.7018 17.2075 7.44972 16.9785C7.16553 16.7204 6.84429 16.3148 6.34037 15.6722L5.16002 16.5978ZM4.82285 8.28684C4.82285 10.0415 6.24531 11.464 8.00001 11.464V9.964C7.07374 9.964 6.32285 9.21311 6.32285 8.28684H4.82285ZM8.00001 11.464C9.7547 11.464 11.1772 10.0415 11.1772 8.28684H9.67716C9.67716 9.21311 8.92627 9.964 8.00001 9.964V11.464ZM11.1772 8.28684C11.1772 6.53215 9.7547 5.10968 8.00001 5.10968V6.60968C8.92627 6.60968 9.67716 7.36057 9.67716 8.28684H11.1772ZM8.00001 5.10968C6.24531 5.10968 4.82285 6.53215 4.82285 8.28684H6.32285C6.32285 7.36057 7.07374 6.60968 8.00001 6.60968V5.10968Z"
+      fill="white"/>
+  </symbol>
+  <symbol viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" id="copy-icon">
+    <path
+      d="M5.0102 0C2.24314 0 0 2.24138 0 5.00627V11.1939C0 11.5545 0.292584 11.8469 0.653505 11.8469C1.01443 11.8469 1.30701 11.5545 1.30701 11.1939V5.00627C1.30701 2.96266 2.96499 1.30598 5.0102 1.30598H11.1208C11.4817 1.30598 11.7743 1.01363 11.7743 0.652991C11.7743 0.292354 11.4817 0 11.1208 0H5.0102Z"
+      fill="#57E8DF"/>
+    <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M13.203 3.08496C10.379 2.76958 7.48344 2.76958 4.65947 3.08496C3.85498 3.1748 3.2085 3.80741 3.11368 4.6175C2.77875 7.47889 2.77875 10.3695 3.11368 13.2309C3.2085 14.041 3.85498 14.6736 4.65947 14.7635C7.48344 15.0788 10.379 15.0788 13.203 14.7635C14.0075 14.6736 14.654 14.041 14.7488 13.2309C15.0837 10.3695 15.0837 7.47889 14.7488 4.6175C14.654 3.80741 14.0075 3.1748 13.203 3.08496ZM4.80464 4.38286C7.53213 4.07826 10.3304 4.07826 13.0578 4.38286C13.2647 4.40595 13.4273 4.56938 13.4506 4.76921C13.7738 7.5298 13.7738 10.3186 13.4506 13.0792C13.4273 13.279 13.2647 13.4425 13.0578 13.4656C10.3304 13.7702 7.53213 13.7702 4.80464 13.4656C4.59783 13.4425 4.43523 13.279 4.41184 13.0792C4.08871 10.3186 4.08871 7.52981 4.41184 4.76921C4.43523 4.56938 4.59783 4.40595 4.80464 4.38286Z"
+          fill="#57E8DF"/>
+  </symbol>
+  <symbol viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" id="phone-icon">
+    <path
+      d="M15.706 9.43511V8.92674C15.706 8.85067 15.706 8.81263 15.7055 8.78046C15.6707 6.34918 13.7082 4.38667 11.2769 4.35185C11.2448 4.35139 11.2067 4.35139 11.1306 4.35139H10.6223M18.8834 10.0706V9.18092C18.8834 8.42186 18.8834 8.04233 18.8548 7.72241C18.5446 4.25827 15.7992 1.51287 12.3351 1.20272C12.0152 1.17407 11.6356 1.17407 10.8766 1.17407L9.98691 1.17407M7.09113 7.66561C6.68381 8.60004 6.88996 9.68856 7.61075 10.4093L9.76472 12.5633C10.4855 13.2841 11.574 13.4903 12.5085 13.0829C13.4429 12.6756 14.5314 12.8818 15.2522 13.6026L16.5627 14.913C16.6262 14.9765 16.6579 15.0082 16.6836 15.0362C17.3154 15.7238 17.3154 16.7808 16.6836 17.4684C16.6579 17.4964 16.6262 17.5281 16.5627 17.5916L15.7661 18.3882C15.1175 19.0368 14.1824 19.3091 13.2869 19.1101C7.18516 17.7542 2.41987 12.9889 1.06394 6.88722C0.864941 5.99172 1.13724 5.05661 1.78591 4.40795L2.58245 3.61141C2.64594 3.54792 2.67768 3.51617 2.70565 3.49048C3.39328 2.85863 4.45023 2.85863 5.13786 3.49048C5.16583 3.51617 5.19757 3.54792 5.26106 3.61141L6.57151 4.92186C7.2923 5.64265 7.49845 6.73117 7.09113 7.66561Z"
+      stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+  </symbol>
+  <symbol viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg" id="mail-icon">
+    <path
+      d="M1.60805 3.64824C1 4.93577 1 6.77405 1 10C1 13.7497 1 15.6246 1.95491 16.9389C2.26331 17.3634 2.6366 17.7367 3.06107 18.0451C4.3754 19 6.25027 19 10 19H12C15.7497 19 17.6246 19 18.9389 18.0451C19.3634 17.7367 19.7367 17.3634 20.0451 16.9389C21 15.6246 21 13.7497 21 10C21 6.75125 21 4.90985 20.379 3.62103M1.60805 3.64824C1.70677 3.4392 1.82153 3.24467 1.95491 3.06107C2.26331 2.6366 2.6366 2.26331 3.06107 1.95491C4.3754 1 6.25027 1 10 1H12C15.7497 1 17.6246 1 18.9389 1.95491C19.3634 2.26331 19.7367 2.6366 20.0451 3.06107C20.1727 3.23667 20.2832 3.42228 20.379 3.62103M1.60805 3.64824L2 4L3.92893 5.92893C7.26227 9.26227 8.92893 10.9289 11 10.9289C13.0711 10.9289 14.7377 9.26227 18.0711 5.92894L20 4L20.379 3.62103"
+      stroke="white"
+      stroke-width="1.5"/>
+  </symbol>
+  <symbol viewBox="0 0 38 39" fill="none" xmlns="http://www.w3.org/2000/svg" id="vacation-icon">
+    <path
+      d="M32.3623 5.20424L29.8675 7.63661M7.41431 7.63661L4.91951 5.20424M4.52819 18.5822H1M18.6409 1.38281V4.82269M36.2819 18.5822H32.7537M4.52819 23.742H32.7537M9.82046 18.5822C9.82046 13.8327 13.7695 9.98252 18.6409 9.98252C23.5123 9.98252 27.4614 13.8327 27.4614 18.5822M9.82046 30.6218H27.4614M15.1127 37.5016H22.1691"
+      stroke="#FAFAFA"
+      stroke-width="2"
+      stroke-linecap="round"
+    />
+  </symbol>
+  <symbol viewBox="0 0 38 33" fill="none" xmlns="http://www.w3.org/2000/svg" id="title-icon">
+    <path
+      d="M17.3773 9.89292L18.3255 10.2107L17.3773 9.89292ZM14.7522 14.028L15.3281 13.2105L14.7522 14.028ZM15.3719 15.8773L16.3201 16.1951L15.3719 15.8773ZM17.997 17.7266L17.4211 16.9091L17.997 17.7266ZM20.0024 17.7266L20.5783 16.9091L20.0024 17.7266ZM22.6275 15.8773L21.6793 16.1951L22.6275 15.8773ZM23.2472 14.028L22.6713 13.2105L23.2472 14.028ZM20.6221 9.89292L21.5703 9.57518L20.6221 9.89292ZM8.03798 19.5105L8.95702 19.1163L8.03798 19.5105ZM14.3226 24.5082L13.9439 25.4337L14.3226 24.5082ZM9.80965 22.0496L10.5002 21.3263L9.80965 22.0496ZM29.9618 19.5105L29.0428 19.1163L29.9618 19.5105ZM23.6772 24.5082L24.0559 25.4337L23.6772 24.5082ZM28.1901 22.0496L28.8807 22.7729L28.1901 22.0496ZM30.1551 6.35512L29.2101 6.68223L30.1551 6.35512ZM24.854 1.37931L24.5623 2.33582L24.854 1.37931ZM7.8447 6.35512L8.78969 6.68223L7.8447 6.35512ZM13.1458 1.37931L13.4375 2.33582L13.1458 1.37931ZM3.03574 15.8912L2.45262 16.7036L2.46685 16.7138L2.48142 16.7235L3.03574 15.8912ZM34.9643 15.8912L35.5186 16.7235L35.5332 16.7138L35.5474 16.7036L34.9643 15.8912ZM17.9999 32C17.9999 32.5523 18.4476 33 18.9999 33C19.5522 33 19.9999 32.5523 19.9999 32H17.9999ZM25.6052 33C26.1575 33 26.6052 32.5523 26.6052 32C26.6052 31.4477 26.1575 31 25.6052 31V33ZM12.3946 31C11.8423 31 11.3946 31.4477 11.3946 32C11.3946 32.5523 11.8423 33 12.3946 33V31ZM7.83807 18.9758L8.79041 18.6708L7.83807 18.9758ZM30.3714 7.2L29.3871 7.37666L30.3714 7.2ZM30.9179 18.5861L30.3636 17.7538L30.9179 18.5861ZM7.09136 18.5923L6.53704 19.4246L7.09136 18.5923ZM15.7549 12.0358C16.9072 12.0358 17.9553 11.3152 18.3255 10.2107L16.4291 9.57518C16.3425 9.83363 16.0807 10.0358 15.7549 10.0358V12.0358ZM15.3281 13.2105C15.0536 13.0171 14.9968 12.7468 15.0807 12.4965C15.1658 12.2425 15.3905 12.0358 15.7549 12.0358V10.0358C13.1991 10.0358 11.982 13.2997 14.1763 14.8456L15.3281 13.2105ZM16.3201 16.1951C16.6923 15.0843 16.2785 13.88 15.3281 13.2105L14.1763 14.8456C14.4217 15.0184 14.5082 15.3073 14.4237 15.5596L16.3201 16.1951ZM17.4211 16.9091C17.1361 17.1099 16.8148 17.0833 16.5675 16.9091C16.3239 16.7375 16.2244 16.4806 16.3201 16.1951L14.4237 15.5596C14.0087 16.7979 14.5533 17.9366 15.4157 18.5441C16.2744 19.149 17.521 19.2852 18.5729 18.5441L17.4211 16.9091ZM20.5783 16.9091C19.635 16.2446 18.3644 16.2446 17.4211 16.9091L18.5729 18.5441C18.8254 18.3662 19.174 18.3662 19.4265 18.5441L20.5783 16.9091ZM21.6793 16.1951C21.775 16.4806 21.6755 16.7375 21.4319 16.9091C21.1846 17.0833 20.8633 17.1099 20.5783 16.9091L19.4265 18.5441C20.4784 19.2852 21.725 19.149 22.5837 18.5441C23.4461 17.9366 23.9907 16.7979 23.5757 15.5596L21.6793 16.1951ZM22.6713 13.2105C21.7209 13.88 21.3071 15.0843 21.6793 16.1951L23.5757 15.5596C23.4912 15.3073 23.5777 15.0184 23.8231 14.8456L22.6713 13.2105ZM22.2445 12.0358C22.6089 12.0358 22.8336 12.2425 22.9188 12.4965C23.0026 12.7468 22.9459 13.0171 22.6713 13.2105L23.8231 14.8456C26.0175 13.2997 24.8003 10.0358 22.2445 10.0358V12.0358ZM19.6739 10.2107C20.0441 11.3152 21.0922 12.0358 22.2445 12.0358V10.0358C21.9188 10.0358 21.6569 9.83363 21.5703 9.57518L19.6739 10.2107ZM21.5703 9.57518C20.7548 7.14161 17.2446 7.14161 16.4291 9.57518L18.3255 10.2107C18.4241 9.91648 18.6789 9.75 18.9997 9.75C19.3205 9.75 19.5754 9.91648 19.6739 10.2107L21.5703 9.57518ZM29.5592 11.85V13.8656H31.5592V11.85H29.5592ZM8.4406 13.8656V11.85H6.4406V13.8656H8.4406ZM23.2984 23.5827C21.4982 24.3194 19.9247 24.8 18.9999 24.8V26.8C20.3678 26.8 22.2808 26.1601 24.0559 25.4337L23.2984 23.5827ZM18.9999 24.8C18.0751 24.8 16.5016 24.3194 14.7014 23.5827L13.9439 25.4337C15.719 26.1601 17.632 26.8 18.9999 26.8V24.8ZM14.7014 23.5827C12.4019 22.6417 11.4603 22.2429 10.5002 21.3263L9.11912 22.7729C10.402 23.9976 11.7214 24.5242 13.9439 25.4337L14.7014 23.5827ZM7.11895 19.9046C7.53429 20.873 8.34628 22.0351 9.11912 22.7729L10.5002 21.3263C9.91791 20.7704 9.26351 19.8309 8.95702 19.1163L7.11895 19.9046ZM24.0559 25.4337C26.2784 24.5242 27.5978 23.9976 28.8807 22.7729L27.4996 21.3263C26.5395 22.2429 25.5979 22.6417 23.2984 23.5827L24.0559 25.4337ZM29.0428 19.1163C28.7363 19.8309 28.0819 20.7704 27.4996 21.3263L28.8807 22.7729C29.6535 22.0351 30.4655 20.873 30.8808 19.9046L29.0428 19.1163ZM18.9999 2C22.1471 2 23.4972 2.01099 24.5623 2.33582L25.1457 0.422807C23.7233 -0.0109935 21.9999 0 18.9999 0V2ZM31.1001 6.028C30.1724 3.34825 27.9463 1.27694 25.1457 0.422807L24.5623 2.33582C26.7889 3.01491 28.5043 4.6432 29.2101 6.68223L31.1001 6.028ZM18.9999 0C15.9999 0 14.2765 -0.0109935 12.8541 0.422807L13.4375 2.33582C14.5026 2.01099 15.8527 2 18.9999 2V0ZM8.78969 6.68223C9.49552 4.6432 11.2109 3.01491 13.4375 2.33582L12.8541 0.422807C10.0535 1.27695 7.82734 3.34825 6.89972 6.028L8.78969 6.68223ZM7.64567 17.7599L3.59005 15.0589L2.48142 16.7235L6.53704 19.4246L7.64567 17.7599ZM3.61886 15.0788C2.04626 13.95 1.70786 12.2588 2.22325 10.8298C2.74195 9.39155 4.13872 8.2 6.17034 8.2V6.2C3.26727 6.2 1.13677 7.94723 0.341869 10.1512C-0.45635 12.3644 0.105297 15.0187 2.45262 16.7036L3.61886 15.0788ZM31.4722 19.4184L35.5186 16.7235L34.4099 15.0589L30.3636 17.7538L31.4722 19.4184ZM35.5474 16.7036C37.8947 15.0187 38.4564 12.3644 37.6581 10.1512C36.8632 7.94723 34.7327 6.2 31.8297 6.2V8.2C33.8613 8.2 35.258 9.39155 35.7768 10.8298C36.2921 12.2588 35.9537 13.95 34.3811 15.0788L35.5474 16.7036ZM17.9999 25.8V32H19.9999V25.8H17.9999ZM25.6052 31H12.3946V33H25.6052V31ZM8.4406 11.85C8.4406 9.57265 8.44454 8.31329 8.61265 7.37666L6.6441 7.02334C6.43665 8.1792 6.4406 9.6582 6.4406 11.85H8.4406ZM8.61265 7.37666C8.65938 7.1163 8.71772 6.89013 8.78969 6.68223L6.89972 6.028C6.78948 6.34648 6.70669 6.67465 6.6441 7.02334L8.61265 7.37666ZM6.4406 13.8656C6.4406 16.2791 6.42967 17.8569 6.88572 19.2808L8.79041 18.6708C8.45152 17.6127 8.4406 16.4015 8.4406 13.8656H6.4406ZM6.88572 19.2808C6.95329 19.4918 7.03066 19.6988 7.11895 19.9046L8.95702 19.1163C8.89358 18.9684 8.83848 18.8208 8.79041 18.6708L6.88572 19.2808ZM29.5592 13.8656C29.5592 16.4123 29.5481 17.6232 29.2052 18.6838L31.1082 19.2991C31.5703 17.8698 31.5592 16.2892 31.5592 13.8656H29.5592ZM29.2052 18.6838C29.1581 18.8294 29.1044 18.9726 29.0428 19.1163L30.8808 19.9046C30.9665 19.7048 31.042 19.5038 31.1082 19.2991L29.2052 18.6838ZM31.5592 11.85C31.5592 9.6582 31.5631 8.1792 31.3557 7.02334L29.3871 7.37666C29.5552 8.31329 29.5592 9.57264 29.5592 11.85H31.5592ZM31.3557 7.02334C31.2931 6.67464 31.2103 6.34647 31.1001 6.028L29.2101 6.68223C29.2821 6.89013 29.3404 7.1163 29.3871 7.37666L31.3557 7.02334ZM30.3636 17.7538C30.1799 17.8761 29.9826 17.9813 29.7745 18.0674L30.5388 19.9156C30.8661 19.7802 31.1789 19.6138 31.4722 19.4184L30.3636 17.7538ZM6.53704 19.4246C6.8324 19.6213 7.14999 19.7842 7.4832 19.9107L8.19294 18.0409C7.99828 17.967 7.81469 17.8725 7.64567 17.7599L6.53704 19.4246ZM6.17034 8.2H7.62838V6.2H6.17034V8.2ZM31.8297 6.2H30.3714V8.2H31.8297V6.2Z"
+      fill="#FAFAFA"
+    />
+  </symbol>
+  <symbol
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    viewBox="0 0 256 256"
+    xml:space="preserve"
+    id="gift-icon"
+  >
+	<g
+    style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;"
+    transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)"
+  >
+		<path
+      d="M 87.172 17.696 H 67.083 c 0.035 -0.2 0.062 -0.403 0.062 -0.613 V 7.205 c 0 -1.306 -0.678 -2.471 -1.815 -3.115 c -1.137 -0.645 -2.485 -0.629 -3.605 0.043 l -16.49 9.877 c -0.084 0.05 -0.156 0.112 -0.235 0.168 c -0.078 -0.056 -0.15 -0.117 -0.234 -0.167 L 28.275 4.133 c -1.121 -0.67 -2.468 -0.687 -3.604 -0.043 c -1.137 0.644 -1.815 1.809 -1.815 3.115 v 9.877 c 0 0.21 0.027 0.413 0.062 0.613 H 2.828 C 1.269 17.696 0 18.964 0 20.523 v 10.02 c 0 1.559 1.269 2.828 2.828 2.828 h 2.513 v 48.956 c 0 2.236 1.819 4.056 4.055 4.056 h 28.722 h 13.764 h 28.723 c 2.236 0 4.055 -1.82 4.055 -4.056 V 33.371 h 2.513 c 1.56 0 2.828 -1.269 2.828 -2.828 v -10.02 C 90 18.964 88.732 17.696 87.172 17.696 z M 46.759 16.556 l 16.49 -9.877 c 0.112 -0.067 0.218 -0.091 0.313 -0.091 c 0.13 0 0.238 0.045 0.305 0.083 c 0.116 0.066 0.311 0.223 0.311 0.534 v 9.877 c 0 0.338 -0.275 0.613 -0.613 0.613 h -5.35 h -11.14 c -0.385 0 -0.527 -0.25 -0.58 -0.42 c 0.008 -0.142 0.017 -0.285 0.009 -0.425 C 46.544 16.747 46.615 16.642 46.759 16.556 z M 55.247 30.404 h -3.366 H 38.118 h -3.366 v -9.741 h 8.174 h 4.149 h 8.173 V 30.404 z M 25.822 17.082 V 7.205 c 0 -0.311 0.195 -0.468 0.311 -0.534 c 0.068 -0.038 0.175 -0.083 0.305 -0.083 c 0.094 0 0.2 0.024 0.312 0.09 l 16.491 9.878 c 0.144 0.087 0.214 0.191 0.255 0.296 c -0.008 0.139 0.001 0.281 0.009 0.422 c -0.053 0.17 -0.194 0.422 -0.58 0.422 H 31.785 h -5.349 C 26.098 17.696 25.822 17.42 25.822 17.082 z M 2.967 30.404 v -9.741 h 23.469 h 5.349 v 9.741 H 5.341 H 2.967 z M 9.396 83.415 c -0.6 0 -1.088 -0.489 -1.088 -1.088 V 33.371 h 23.477 h 6.333 v 50.044 H 9.396 z M 41.085 83.415 V 33.371 h 7.83 v 50.044 H 41.085 z M 81.692 82.327 c 0 0.6 -0.488 1.088 -1.088 1.088 H 51.882 V 33.371 h 6.333 h 23.477 V 82.327 z M 87.033 30.404 h -2.374 H 58.215 v -9.741 h 5.35 h 23.469 V 30.404 z"
+      style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"
+      transform="matrix(1 0 0 1 0 0)"
+      stroke-linecap="round"
+    />
+	</g>
+</symbol>
 </svg>
 <script src="https://cdn.jsdelivr.net/npm/@uvarov.frontend/vanilla-calendar/build/vanilla-calendar.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>

@@ -207,7 +207,6 @@
   }
 
   /*gallery*/
-
   .swiper-gallery {
     height: 100%;
   }
@@ -224,5 +223,9 @@
 
   .user-info {
     row-gap: 20px;
+  }
+
+  .user-photo {
+    width: 32%;
   }
 }

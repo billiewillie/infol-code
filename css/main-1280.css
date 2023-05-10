@@ -353,7 +353,7 @@
   }
 
   .user-photo {
-    width: 32%;
+    width: 40%;
   }
 
   .user-photo .swiper {
@@ -383,11 +383,20 @@
     font-size: 66px;
   }
 
+  .user-info__general .user-birthday {
+    justify-content: flex-start;
+  }
+
   .user-info__contacts {
     flex-direction: row;
     padding: 50px 10px 50px 64px;
     font-size: 19px;
     column-gap: 47px;
+    width: auto;
+    margin-left: 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
   }
 
   .user-info__contacts::before {
@@ -398,6 +407,12 @@
     position: absolute;
     right: 0;
     top: 0;
+    margin-left: 0;
+    width: auto;
+    -webkit-border-radius: 0 3px 0 3px;
+    -moz-border-radius: 0 3px 0 3px;
+    border-radius: 0 3px 0 3px;
+    overflow: hidden;
   }
 
   .user-info__about {

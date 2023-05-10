@@ -7,7 +7,8 @@
 
   --weight-thin: 100;
   --weight-light: 400;
-  --weight-medium: 600;
+  --weight-medium: 500;
+  --weight-semibold: 600;
   --weight-bold: 700;
 
   --line-height: 1.2;
@@ -113,6 +114,10 @@ main.main {
   display: flex;
   flex-direction: column;
   row-gap: 30px;
+}
+
+main.main.personal-page {
+  row-gap: 0;
 }
 
 .card {
@@ -336,6 +341,7 @@ main.main {
   font-size: 13px;
   text-underline-offset: 3px;
 }
+
 /* birthday */
 
 
@@ -364,6 +370,7 @@ main.main {
   mix-blend-mode: multiply;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 11%, #272E46 100%);
 }
+
 /*gallery*/
 
 
@@ -371,18 +378,21 @@ main.main {
 .updates .card {
   background: linear-gradient(180deg, #FFFFFF 71.19%, #E3BBF7 100%);
 }
+
 /*updates*/
 
 /*docs*/
 .docs .card {
   background: linear-gradient(180deg, #FFFFFF 67.11%, #F2CECE 100%);
 }
+
 /*docs*/
 
 /*order*/
 .order .card {
   background: linear-gradient(180deg, #FFFFFF 67.11%, #BAF7F3 100%);
 }
+
 /*order*/
 
 /*calendar*/
@@ -585,12 +595,11 @@ main.main {
 }
 
 /*user*/
-
 .user-info__general {
   display: flex;
   flex-direction: column;
   row-gap: 10px;
-  padding: 15px 0;
+  padding: 20px 0;
   text-align: center;
 }
 
@@ -605,6 +614,7 @@ main.main {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #8D8D8D;
 }
 
 .user-info__general .user-birthday .icon {
@@ -624,33 +634,71 @@ main.main {
   margin-left: -10px;
 }
 
+.user-info__contacts-item {
+  display: flex;
+  align-items: center;
+  column-gap: 22px;
+}
+
+.user-info__contacts-item > div {
+  display: flex;
+  flex: auto;
+  justify-content: space-between;
+}
+
+.user-info__contacts-item svg {
+  max-width: 20px;
+  max-height: 18px;
+}
+
+.user-info__contacts-item a {
+  color: var(--light-blue);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
 .user-info__badges {
   display: flex;
   width: calc(100% + 20px);
   margin-left: -10px;
 }
 
-.user-info__badges>div {
+.user-info__badges-item {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   row-gap: 12px;
   text-align: center;
-  padding: 15px 0;
+  padding: 12px 10px;
   color: var(--white);
   flex: auto;
 }
 
-.user-info__badges>div .icon{
+.user-info__badges-item .icon {
   max-width: 42px;
   max-height: 36px;
 }
 
-.user-info__vacation {
+.user-info__badges-item.vacation {
   background-color: #E85959;
 }
 
-.user-info__years {
+.user-info__badges-item.years {
+  background-color: var(--purple);
+}
+
+.user-info__badges-item .text {
+  line-height: 1;
+  font-size: 11px;
+}
+
+.user-info__badges-item.years .years-number {
+  font-size: 34px;
+  font-weight: var(--weight-semibold);
+}
+
+.user-info__badges-item.titles {
   background-color: var(--light-blue);
 }
 
@@ -658,6 +706,7 @@ main.main {
   display: flex;
   column-gap: 10px;
 }
+
 .user-info__row .user-info__title {
   font-size: 13px;
   min-width: 90px;
@@ -666,6 +715,11 @@ main.main {
 
 .user-info__row .user-info__value {
   font-size: 16px;
+}
+
+.user-info__row a.user-info__value {
+  color: var(--light-blue);
+  text-underline-offset: 3px;
 }
 
 .user-info__about {
@@ -677,7 +731,7 @@ main.main {
 .user-info__position {
   display: flex;
   flex-direction: column;
-  padding: 10px 0;
+  padding: 30px 0;
   row-gap: 25px;
 }
 
@@ -709,9 +763,13 @@ main.main {
   height: 17px;
 }
 
-.swiper-slide.user-item img{
+.swiper-slide.user-item img {
   height: 100%;
   object-fit: cover;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--light-blue);
 }
 
 @keyframes dropdown-animation-in {

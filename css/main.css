@@ -118,6 +118,15 @@ main.main {
   row-gap: 30px;
 }
 
+main.main h1 {
+  text-align: center;
+}
+
+.default-page h1 {
+  font-weight: var(--weight-thin);
+  font-size: 30px;
+}
+
 main.main.personal-page {
   row-gap: 0;
 }
@@ -785,6 +794,92 @@ main.main.personal-page {
 
 .swiper-pagination-bullet-active {
   background: var(--light-blue);
+}
+
+.main.team-page {
+  max-width: 1562px;
+  margin: auto;
+}
+
+
+
+.team {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.member {
+  display: flex;
+  position: relative;
+  z-index: 1;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 35px 15px;
+  row-gap: 15px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  box-shadow: 0px 0px 8px var(--box-shadow-color);
+}
+
+.member-photo {
+  position: relative;
+  z-index: 2;
+  width: 172px;
+  height: 172px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.member-text {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.member-name {
+  font-size: 24px;
+  font-weight: var(--weight-light);
+}
+
+.member-name .surname {
+  display: block;
+}
+
+.member-pos {
+  color: #838383;
+  font-size: 18px;
+}
+
+.member-deps-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.member-deps-item-link {
+  display: flex;
+  position: relative;
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--light-blue);
+  background-color: var(--white);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  padding: 20px 15px;
+  color: var(--black);
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.member-deps-item-link:hover {
+  background-color: var(--light-blue);
 }
 
 @keyframes dropdown-animation-in {

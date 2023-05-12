@@ -233,4 +233,77 @@
   .user-info__contacts-item {
     column-gap: 17px;
   }
+
+  .member-photo {
+    width: 172px;
+    height: 172px;
+  }
+
+  .member-text {
+    max-width: 400px;
+  }
+
+  .member-pos {
+    font-size: 18px;
+  }
+
+  .member-level1 .member-deps-list {
+    column-gap: 172px;
+  }
+
+  .member-level1 {
+    grid-template-columns: 1fr 172px 1fr;
+    grid-template-rows: 172px;
+    row-gap: 132px;
+  }
+
+  .member-level3 {
+    padding-left: 288px;
+  }
+
+  .member:nth-last-child(2) li.member-deps-item::before {
+    width: 86px;
+  }
+
+  .member:nth-last-child(2) li.member-deps-item:nth-child(even)::before {
+    left: -86px;
+  }
+
+  .member:nth-last-child(2) li.member-deps-item:nth-child(odd)::before {
+    left: inherit;
+    right: -86px;
+  }
+
+  .member:nth-last-child(2)::after {
+    top: 86px;
+  }
+
+  .member:nth-child(2)::before {
+    left: 152px;
+  }
+
+  .member:nth-child(4)::before {
+    left: 154px;
+    height: 470px;
+    width: 57px;
+  }
+
+  .member:nth-child(5)::before {
+    left: 210px;
+    height: 410px;
+    top: 86px;
+    width: 80px;
+  }
+
+  .member-level3::after {
+    left: 288px;
+    width: calc(100% - 288px);
+  }
+
+  .member:nth-child(7)::before {
+    left: 150px;
+    top: 160px;
+    height: 240px;
+    width: 138px;
+  }
 }

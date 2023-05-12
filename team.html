@@ -84,19 +84,19 @@
     <nav class="header-menu">
       <ul>
         <li>
-          <a href="#">Новости</a>
+          <a href="/news">Новости</a>
         </li>
         <li>
-          <a href="#">Новичку</a>
+          <a href="/newbe">Новичку</a>
         </li>
         <li>
-          <a href="#">Фотогалерея</a>
+          <a href="/photo">Фотогалерея</a>
         </li>
         <li>
-          <a href="#">Наша команда</a>
+          <a href="/team.html">Наша команда</a>
         </li>
         <li>
-          <a href="#">О компании</a>
+          <a href="/about">О компании</a>
         </li>
       </ul>
     </nav>
@@ -127,14 +127,24 @@
               <svg class="icon">
                 <use xlink:href="#settings-icon"></use>
               </svg>
-              <span>Редактировать профиль</span></a>
+              <span>Перейти в профиль</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg class="icon">
+                <use xlink:href="#settings-icon"></use>
+              </svg>
+              <span>Изменить пароль</span>
+            </a>
           </li>
           <li>
             <a href="#">
               <svg class="icon">
                 <use xlink:href="#logout-icon"></use>
               </svg>
-              <span>Выйти</span></a>
+              <span>Выйти</span>
+            </a>
           </li>
         </ul>
       </div>
@@ -160,7 +170,7 @@
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="/orders">
             <span>Заявки</span>
             <svg class="icon">
               <use xlink:href="#order-small-icon"></use>
@@ -168,7 +178,7 @@
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="/booking">
             <span>Бронирование переговорок</span>
             <svg class="icon">
               <use xlink:href="#key-icon"></use>
@@ -176,7 +186,7 @@
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="/marketing-docs">
             <span>Маркетинговые материалы</span>
             <svg class="icon">
               <use xlink:href="#docs-small-icon"></use>
@@ -184,7 +194,7 @@
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="/learning">
             <span>Обучение</span>
             <svg class="icon">
               <use xlink:href="#education-icon"></use>
@@ -194,168 +204,384 @@
       </ul>
     </nav>
   </aside>
-  <main class="main">
-    <div class="user-photo">
-      <div class="swiper swiper-user">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-          <!-- Slides -->
-          <div class="swiper-slide user-item">
-            <picture>
-              <source srcset="./img/lazareva.webp" type="image/webp"/>
-              <img src="./img/lazareva.jpg" alt="news-1"/>
-            </picture>
-          </div>
-          <div class="swiper-slide user-item">
-            <picture>
-              <source srcset="./img/lazareva.webp" type="image/webp"/>
-              <img src="./img/lazareva.jpg" alt="news-1"/>
-            </picture>
-          </div>
-        </div>
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
-      </div>
-    </div>
-    <div class="user-info">
-      <div class="user-info__general">
-        <h1 class="user-name">
-          <span class="surname">Лазарева</span>
-          <span>Марина Руслановна</span>
-        </h1>
-        <div class="user-birthday">
-          <svg class="icon">
-            <use xlink:href="#mail-icon"></use>
-          </svg>
-          <span>День рождения: 20 Марта</span>
-        </div>
-      </div>
-      <div class="user-info__contacts">
-        <div class="user-info__contacts-item user-phone__local">
-          <svg class="icon">
-            <use xlink:href="#phone-icon"></use>
-          </svg>
-          <div>
-            <span>Местный телефон: 389</span>
-          </div>
-        </div>
-        <div class="user-info__contacts-item user-email">
-          <svg class="icon">
-            <use xlink:href="#mail-icon"></use>
-          </svg>
-          <div>
-            <span>Эл.почта: <a href="mailto:gusikhina@bioline.ru">gusikhina@bioline.ru</a></span>
-          </div>
-          <svg class="icon">
-            <use xlink:href="#copy-icon"></use>
-          </svg>
-        </div>
-        <div class="user-info__contacts-item user-phone__mobile">
-          <svg class="icon">
-            <use xlink:href="#phone-icon"></use>
-          </svg>
-          <div>
-            <span>Мобильный: <a href="tel:+79218768787">+7(931) 394-84-24</a></span>
-          </div>
-          <svg class="icon">
-            <use xlink:href="#copy-icon"></use>
-          </svg>
-        </div>
-      </div>
-      <div class="user-info__badges">
-        <div class="user-info__badges-item vacation">
-          <svg class="icon">
-            <use xlink:href="#vacation-icon"></use>
-          </svg>
-          <p class="text">
-            <span>в отпуске с</span> <span>1 апреля</span> - <span>9 мая</span>
-          </p>
-        </div>
-        <div class="user-info__badges-item years">
-          <p class="years-number">16</p>
-          <p class="text">лет в компании</p>
-        </div>
-        <div class="user-info__badges-item titles">
-          <svg class="icon">
-            <use xlink:href="#title-icon"></use>
-          </svg>
-          <p class="text">награды</p>
-        </div>
-      </div>
-      <div class="user-info__about">
-        <div class="user-info__position">
-          <div class="swiper swiper-user-position">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide swiper-user-position-item">
-                <div class="user-info__row">
-                  <div class="user-info__title">Должность:</div>
-                  <div class="user-info__value">Санкт-Петербург</div>
-                </div>
-                <div class="user-info__row">
-                  <div class="user-info__title">Компания:</div>
-                  <div class="user-info__value">Bio Line</div>
-                </div>
-                <div class="user-info__row">
-                  <div class="user-info__title">Компания:</div>
-                  <a href="#" class="user-info__value">Отдел оптической микроскопии, анализа изображений и спектрометрии
-                    в
-                    научных исследованиях</a>
-                </div>
-                <div class="user-info__row">
-                  <div class="user-info__title">Группа:</div>
-                  <div class="user-info__value">Группа микроскопии высокого разрешения и анализа изображений</div>
-                </div>
-                <div class="user-info__row">
-                  <div class="user-info__title">Должность:</div>
-                  <div class="user-info__value">Руководитель группы</div>
-                </div>
-              </div>
-              <div class="swiper-slide swiper-user-position-item">
-                <div class="user-info__row">
-                  <div class="user-info__title">Должность:</div>
-                  <div class="user-info__value">Санкт-Петербург</div>
-                </div>
-                <div class="user-info__row">
-                  <div class="user-info__title">Компания:</div>
-                  <div class="user-info__value">Bio Line</div>
-                </div>
-                <div class="user-info__row">
-                  <div class="user-info__title">Компания:</div>
-                  <a href="#" class="user-info__value">Отдел оптической микроскопии, анализа изображений и спектрометрии
-                    в
-                    научных исследованиях</a>
-                </div>
-                <div class="user-info__row">
-                  <div class="user-info__title">Группа:</div>
-                  <div class="user-info__value">Группа микроскопии высокого разрешения и анализа изображений</div>
-                </div>
-                <div class="user-info__row">
-                  <div class="user-info__title">Должность:</div>
-                  <div class="user-info__value">Руководитель группы</div>
-                </div>
-              </div>
-            </div>
-
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-          </div>
-        </div>
-        <div class="user-info__location">
-          <header class="user-info__location-header">
-            <svg class="icon">
-              <use xlink:href="#location-icon"></use>
-            </svg>
-            <span>Где находится?</span>
-          </header>
+  <main class="main team-page default-page">
+    <h1 class="title">Наша команда</h1>
+    <div class="team">
+      <div class="member-level1 member">
+        <div class="member-photo">
           <picture>
-            <source srcset="./img/map.webp" type="image/webp"/>
-            <img src="./img/map.png" alt="avatar"/>
+            <source srcset="./img/semenov.webp" type="image/webp"/>
+            <img src="./img/semenov.jpg" alt="semenov"/>
           </picture>
         </div>
+        <div class="member-text">
+          <h2 class="member-name">
+            <span class="surname">Семенов</span> Александр Владимирович
+          </h2>
+          <span class="member-pos">Генеральный директор БиоЛайн</span>
+        </div>
+      </div>
+      <div class="member-level2 member">
+        <div class="member-photo">
+          <picture>
+            <source srcset="./img/dulaeva.webp" type="image/webp"/>
+            <img src="./img/dulaeva.jpg" alt="semenov"/>
+          </picture>
+        </div>
+        <div class="member-text">
+          <h2 class="member-name">
+            <span class="surname">Дулаева</span> Оксана Евгеньевна
+          </h2>
+          <span class="member-pos">Заместитель генерального директора по маркетингу и продажам БиоСистемы</span>
+        </div>
+        <ul class="member-deps-list">
+          <li class="member-deps-item">
+            <a class="member-deps-item-link" href="">Отдел по работе с клиентами БС</a>
+          </li>
+          <li class="member-deps-item">
+            <a class="member-deps-item-link" href="">Отдел продукции для материнства и детства</a>
+          </li>
+          <li class="member-deps-item">
+            <a class="member-deps-item-link" href="">Отдел госпитального оборудования и мебели</a>
+          </li>
+        </ul>
+      </div>
+      <div class="member-level2 member">
+        <div class="member-photo">
+          <picture>
+            <source srcset="./img/dmitrieva.webp" type="image/webp"/>
+            <img src="./img/dmitrieva.jpg" alt="semenov"/>
+          </picture>
+        </div>
+        <div class="member-text">
+          <h2 class="member-name">
+            <span class="surname">Дмитриева</span> Марина Олеговна
+          </h2>
+          <span class="member-pos">Директор по маркетингу и продажам общелабораторного оборудования</span>
+        </div>
+        <ul class="member-deps-list">
+          <li class="member-deps-item">
+            <a class="member-deps-item-link" href="">Отдел общелабораторного оборудования</a>
+          </li>
+          <li class="member-deps-item">
+            <a class="member-deps-item-link" href="">Отдел лабораторной мебели</a>
+          </li>
+          <li class="member-deps-item">
+            <a class="member-deps-item-link" href="">Отдел преаналитических систем и расходных материалов</a>
+          </li>
+        </ul>
+      </div>
+      <div class="member-level2 member">
+        <div class="member-photo">
+          <picture>
+            <source srcset="./img/solntseva.webp" type="image/webp"/>
+            <img src="./img/solntseva.jpg" alt="semenov"/>
+          </picture>
+        </div>
+        <div class="member-text">
+          <h2 class="member-name">
+            <span class="surname">Солнцева</span> Ольга Станиславовна
+          </h2>
+          <span class="member-pos">Заместитель генерального директора по маркетингу и продажам БиоЛайна</span>
+        </div>
+        <ul class="member-deps-list">
+          <li class="member-deps-item">
+            <a class="member-deps-item-link" href="">Отдел продукции для клеточных и молекулярных методов анализа</a>
+          </li>
+          <li class="member-deps-item">
+            <a class="member-deps-item-link" href="">Отдел по работе с клиентами БЛ</a>
+          </li>
+          <li class="member-deps-item">
+            <a class="member-deps-item-link" href="">Отдел диагностики инфекционных заболеваний</a>
+          </li>
+          <li class="member-deps-item">
+            <a class="member-deps-item-link" href="">Отдел оптической микроскопии, анализа изображений и спектрометрии в научных исследованиях</a>
+          </li>
+        </ul>
+      </div>
+      <div class="member-level3 member">
+        <div class="member-photo">
+          <picture>
+            <source srcset="./img/evteev.webp" type="image/webp"/>
+            <img src="./img/evteev.jpg" alt="evteev"/>
+          </picture>
+        </div>
+        <div class="member-text">
+          <h2 class="member-name">
+            <span class="surname">Евтеев</span> Андрей Владимирович
+          </h2>
+          <span class="member-pos">Директор по развитию продукции для научных исследований</span>
+        </div>
+      </div>
+      <div class="member-level3 member">
+        <div class="member-photo">
+          <picture>
+            <source srcset="./img/kislov.webp" type="image/webp"/>
+            <img src="./img/kislov.jpg" alt="kislov"/>
+          </picture>
+        </div>
+        <div class="member-text">
+          <h2 class="member-name">
+            <span class="surname">Кислов</span> Павел Владимирович
+          </h2>
+          <span class="member-pos">Директор по маркетингу и продажам продукции для гистологии/цитологии</span>
+        </div>
+        <ul class="member-deps-list">
+          <li class="member-deps-item">
+            <a class="member-deps-item-link" href="">Отдел цитологии</a>
+          </li>
+          <li class="member-deps-item">
+            <a class="member-deps-item-link" href="">Отдел оборудования для клинической микроскопии и цифровой патологии</a>
+          </li>
+          <li class="member-deps-item">
+            <a class="member-deps-item-link" href="">Отдел молекулярной диагностики в патоморфологии</a>
+          </li>
+          <li class="member-deps-item">
+            <a class="member-deps-item-link" href="">Отдел иммуногистохимии</a>
+          </li>
+          <li class="member-deps-item">
+            <a class="member-deps-item-link" href="">Отдел гистологии</a>
+          </li>
+          <li class="member-deps-item">
+            <a class="member-deps-item-link" href="">Отдел продаж гистологических/цитологических расходных материалов, реагентов и оборудования</a>
+          </li>
+        </ul>
+      </div>
+      <div class="member-level2 member">
+        <div class="member-photo">
+          <picture>
+            <source srcset="./img/kaukova.webp" type="image/webp"/>
+            <img src="./img/kaukova.jpg" alt="semenov"/>
+          </picture>
+        </div>
+        <div class="member-text">
+          <h2 class="member-name">
+            <span class="surname">Каюкова</span> Людмила Леонидовна
+          </h2>
+          <span class="member-pos">Заместитель генерального директора по сопровождению корпоративного бизнеса</span>
+        </div>
+        <ul class="member-deps-list">
+          <li class="member-deps-item">
+            <a class="member-deps-item-link" href="">Отдел персонала</a>
+          </li>
+          <li class="member-deps-item">
+            <a class="member-deps-item-link" href="">Отдел рекламы</a>
+          </li>
+          <li class="member-deps-item">
+            <a class="member-deps-item-link" href="">Тендерный отдел</a>
+          </li>
+        </ul>
+      </div>
+      <div class="member-level3 member">
+        <div class="member-photo">
+          <picture>
+            <source srcset="./img/kodenuk.webp" type="image/webp"/>
+            <img src="./img/kodenuk.jpg" alt="semenov"/>
+          </picture>
+        </div>
+        <div class="member-text">
+          <h2 class="member-name">
+            <span class="surname">Коденюк</span> Владимир Анатольевич
+          </h2>
+          <span class="member-pos">Директор по административно-хозяйственным вопросам</span>
+        </div>
+        <ul class="member-deps-list">
+          <li class="member-deps-item">
+            <a class="member-deps-item-link" href="">Автохозяйство</a>
+          </li>
+          <li class="member-deps-item">
+            <a class="member-deps-item-link" href="">Секретариат</a>
+          </li>
+        </ul>
+      </div>
+      <div class="member-level2 member">
+        <div class="member-photo">
+          <picture>
+            <source srcset="./img/shubaev.webp" type="image/webp"/>
+            <img src="./img/shubaev.jpg" alt="semenov"/>
+          </picture>
+        </div>
+        <div class="member-text">
+          <h2 class="member-name">
+            <span class="surname">Шубаев</span> Павел Андреевич
+          </h2>
+          <span class="member-pos">Директор по логистике</span>
+        </div>
+        <ul class="member-deps-list">
+          <li class="member-deps-item">
+            <a class="member-deps-item-link" href="">Склад</a>
+          </li>
+          <li class="member-deps-item">
+            <a class="member-deps-item-link" href="">Отдел логистики</a>
+          </li>
+          <li class="member-deps-item">
+            <a class="member-deps-item-link" href="">Отдел импорта</a>
+          </li>
+          <li class="member-deps-item">
+            <a class="member-deps-item-link" href="">Отдел закупок</a>
+          </li>
+        </ul>
+      </div>
+      <div class="member-level2 member">
+        <div class="member-photo">
+          <picture>
+            <source srcset="./img/guseva.webp" type="image/webp"/>
+            <img src="./img/guseva.jpg" alt="semenov"/>
+          </picture>
+        </div>
+        <div class="member-text">
+          <h2 class="member-name">
+            <span class="surname">Гусева</span> Наталия Константиновна
+          </h2>
+          <span class="member-pos">Директор по правовым вопросам</span>
+        </div>
+        <ul class="member-deps-list">
+          <li class="member-deps-item">
+            <a class="member-deps-item-link" href="">Отдел регистрации медицинских изделий</a>
+          </li>
+          <li class="member-deps-item">
+            <a class="member-deps-item-link" href="">Юридический отдел</a>
+          </li>
+        </ul>
+      </div>
+      <div class="member-level2 member">
+        <div class="member-photo">
+          <picture>
+            <source srcset="./img/gvozdarev.webp" type="image/webp"/>
+            <img src="./img/gvozdarev.jpg" alt="semenov"/>
+          </picture>
+        </div>
+        <div class="member-text">
+          <h2 class="member-name">
+            <span class="surname">Гвоздарев</span> Андрей Владимирович
+          </h2>
+          <span class="member-pos">Директор IT</span>
+        </div>
+        <ul class="member-deps-list">
+          <li class="member-deps-item">
+            <a class="member-deps-item-link" href="">IT отдел</a>
+          </li>
+        </ul>
+      </div>
+      <div class="member-level2 member">
+        <div class="member-photo">
+          <picture>
+            <source srcset="./img/zarutskiy.webp" type="image/webp"/>
+            <img src="./img/zarutskiy.jpg" alt="semenov"/>
+          </picture>
+        </div>
+        <div class="member-text">
+          <h2 class="member-name">
+            <span class="surname">Заруцкий</span> Дмитрий Михайлович
+          </h2>
+          <span class="member-pos">Технический директор</span>
+        </div>
+        <ul class="member-deps-list">
+          <li class="member-deps-item">
+            <a class="member-deps-item-link" href="">Служба технического сервиса</a>
+          </li>
+        </ul>
+      </div>
+      <div class="member-level2 member">
+        <div class="member-photo">
+          <picture>
+            <source srcset="./img/abramov.webp" type="image/webp"/>
+            <img src="./img/abramov.jpg" alt="semenov"/>
+          </picture>
+        </div>
+        <div class="member-text">
+          <h2 class="member-name">
+            <span class="surname">Абрамов</span> Максим Николаевич
+          </h2>
+          <span class="member-pos">Финансовый директор</span>
+        </div>
+        <ul class="member-deps-list">
+          <li class="member-deps-item">
+            <a class="member-deps-item-link" href="">Экономический отдел</a>
+          </li>
+          <li class="member-deps-item">
+            <a class="member-deps-item-link" href="">Финансовый отдел</a>
+          </li>
+        </ul>
+      </div>
+      <div class="member-level2 member">
+        <ul class="member-deps-list">
+          <li class="member-deps-item">
+            <a class="member-deps-item-link" href="">Отдел комплексных проектов и поставок</a>
+          </li>
+        </ul>
+      </div>
+      <div class="member-level2 member">
+        <ul class="member-deps-list">
+          <li class="member-deps-item">
+            <a class="member-deps-item-link" href="">Бухгалтерия</a>
+          </li>
+        </ul>
+      </div>
+      <div class="member-level1 member">
+        <div class="member-photo">
+          <picture>
+            <source srcset="./img/semenov-zam.webp" type="image/webp"/>
+            <img src="./img/semenov-zam.jpg" alt="semenov"/>
+          </picture>
+        </div>
+        <div class="member-text">
+          <h2 class="member-name">
+            <span class="surname">Семенов</span> Алексей Александрович
+          </h2>
+          <span class="member-pos">Генеральный директор БиоСистемы</span>
+        </div>
+        <ul class="member-deps-list">
+          <li class="member-deps-item">
+            <a class="member-deps-item-link" href="">ООО «БиоБеби»</a>
+          </li>
+          <li class="member-deps-item">
+            <a class="member-deps-item-link" href="">Филиал г. Нижний Новгород</a>
+          </li>
+          <li class="member-deps-item">
+            <a class="member-deps-item-link" href="">Филиал г. Москва</a>
+          </li>
+          <li class="member-deps-item">
+            <a class="member-deps-item-link" href="">Филиал г. Новосибирск</a>
+          </li>
+          <li class="member-deps-item">
+            <a class="member-deps-item-link" href="">Филиал г. Ростов-на-Дону</a>
+          </li>
+          <li class="member-deps-item">
+            <a class="member-deps-item-link" href="">Филиал г. Казань</a>
+          </li>
+          <li class="member-deps-item">
+            <a class="member-deps-item-link" href="">Филиал г. Краснодар</a>
+          </li>
+          <li class="member-deps-item">
+            <a class="member-deps-item-link" href="">Филиал г. Уфа</a>
+          </li>
+          <li class="member-deps-item">
+            <a class="member-deps-item-link" href="">Филиал г. Хабаровск</a>
+          </li>
+          <li class="member-deps-item">
+            <a class="member-deps-item-link" href="">Филиал г. Самара</a>
+          </li>
+          <li class="member-deps-item">
+            <a class="member-deps-item-link" href="">ТОО «БиоЛайн Казахстан»</a>
+          </li>
+          <li class="member-deps-item">
+            <a class="member-deps-item-link" href="">Филиал г. Екатеринбург</a>
+          </li>
+          <li class="member-deps-item">
+            <a class="member-deps-item-link" href="">БиоЛайн-БС (Республика Беларусь)</a>
+          </li>
+          <li class="member-deps-item">
+            <a class="member-deps-item-link" href="">ООО «BLUBIOMEDICAL»</a>
+          </li>
+        </ul>
+      </div>
+      <div class="member-level2 member">
+        <ul class="member-deps-list">
+          <li class="member-deps-item">
+            <a class="member-deps-item-link" href="">ООО «БИОМЕБЕЛЬ»</a>
+          </li>
+        </ul>
       </div>
     </div>
   </main>

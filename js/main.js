@@ -162,6 +162,7 @@ const calendar = new VanillaCalendar('#calendar', {
     `,
   },
 });
+
 calendar.init();
 
 const aside = document.querySelector('.aside');
@@ -186,10 +187,10 @@ menuSwitch.addEventListener('change', e => {
 const dropdownTargets = document.querySelectorAll('.dropdown-target');
 
 let intervalId;
-
 dropdownTargets.forEach(e => {
   e.addEventListener('click', function () {
     const target = e.closest('.dropdown-target').dataset.path;
+
     document.querySelectorAll('.dropdown').forEach(e => {
       if (!document.querySelector(`[data-target=${target}]`).classList.contains('show')) {
         if (e.classList.contains('show')) {
@@ -226,6 +227,13 @@ dropdownTargets.forEach(e => {
             document.querySelector(`[data-target=${target}]`).classList.remove('hide', 'show');
           }, 300);
         }
+      }
+
+      window.onscroll = ev => {
+        document.querySelector(`[data-target=${target}]`).classList.add('hide');
+        setTimeout(e => {
+          document.querySelector(`[data-target=${target}]`).classList.remove('hide', 'show');
+        }, 300);
       }
     });
   });
